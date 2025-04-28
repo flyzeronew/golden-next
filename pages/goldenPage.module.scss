@@ -1,0 +1,213 @@
+.homePage .kvBox{
+    color: #fff;
+    background: url(/golden/images/kv-img.webp) no-repeat center top;
+    background-attachment: fixed;
+}
+.homePage .kvBox .head,
+.homePage .kvBox .logo,
+.homePage .kvBox .txtBox
+{
+    width: 100%;
+}
+.homePage .kvBox .txtBox br{
+    display: none;
+}
+.homePage .kvBox :global(.frameBox){
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.homePage .kvBox .logo{
+    display: flex;
+    justify-content: center;
+}
+.homePage .kvBox .txtBox .txt{
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+.homePage .kvBox .txtBox .time{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 36px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+.homePage article section{
+    padding: 50px 0;
+}
+
+@media (max-width:1023px) {
+    .homePage .kvBox .txtBox br{
+        display: block;
+    }
+    .homePage .kvBox .txtBox .time{
+        font-size: 32px;
+    }
+    .homePage article section{
+        padding: 30px 0;
+    }
+}
+@media (max-width:450px) {
+    .homePage .kvBox .logo .img{
+        width: 70%;
+    }
+}
+@media (max-width:359px) {
+    .homePage .kvBox .txtBox .time{
+        font-size: 28px;
+    }
+}
+
+// 獎項區塊
+.awardsBox .list{
+    margin-bottom: 30px;
+}
+.awardsBox .list li{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom:1px solid #EFEBE6;
+}
+.awardsBox .list li:last-child{
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+.awardsBox .list li a{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.awardsBox .imgBox{
+    width: 20%;
+}
+.awardsBox .txtBox{
+    width: 75%;
+}
+.awardsBox .imgBox .img{
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1/1; 
+    line-height: 0;   
+}
+.awardsBox .title{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;    
+}
+.awardsBox .txt{
+    font-weight: 500;
+    font-size: 13px;
+    color: #8B8182;
+}
+.awardsBox .arraw{
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1; 
+    line-height: 0;
+}
+@media (max-width:1023px) {
+    .awardsBox .list li{
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom:1px solid #EFEBE6;
+    }
+    .awardsBox .list{
+        margin-bottom: 15px;
+    }
+    .awardsBox .list li a{
+        column-gap: 15px;
+    }    
+    .awardsBox .title{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .awardsBox .txt{
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+    }
+}
+@media (max-width:450px) {
+    .awardsBox .imgBox{
+        width: 30%;
+    }
+    .awardsBox .txtBox{
+        width: 65%;
+    }
+}
+@media (max-width:359px) {
+    .awardsBox .title{
+        font-size: 20px;
+    }
+}
+
+// 獎項區塊 ed
+
+// 焦點新聞區塊
+.focusBox{
+
+}
+.focusBox .title{
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+.focusBox .firstNews a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.focusBox .firstNews .imgBox{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.focusBox .img{
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+.focusBox .firstNews .txtBox{
+    width: 30%;
+}
+.focusBox .time{
+    font-weight: 400;
+    font-size: 13px;
+    color: #98836B;
+    margin-bottom: 15px;
+}
+.focusBox .firstNews .txt,
+.focusBox .list .txt
+{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.focusBox .firstNews .txt{
+    font-size: 28px;
+    -webkit-line-clamp: 4;
+}
+
+.focusBox .list{
+    margin-bottom: 30px;
+}
+.focusBox .list ul{
+    display: flex;
+    column-gap: 30px;
+}
+.focusBox .list .img{
+    margin-bottom: 15px;
+}
+.focusBox .list .txt{
+    font-size: 22px;
+    -webkit-line-clamp: 3;
+}
+
+// 焦點新聞區塊ed

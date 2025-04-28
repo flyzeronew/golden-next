@@ -1,0 +1,104 @@
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;  
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto","Noto Sans TC",sans-serif;
+  background-color: #fff;
+  color: #0F0E1B;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,ul {
+  list-style: none;
+  margin: 0;
+  padding: 0
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+.frameBox {
+  width: 900px;
+  margin: 0 auto;
+}
+@media (max-width:1023px) {
+  .frameBox {
+    width:768px;
+    padding:0 20px;
+  }
+}
+@media (max-width:767px) {
+  .frameBox {
+    width:100%;
+  }
+}
+@media (max-width:359px) {
+  .frameBox {
+    padding:0 15px;
+  }
+}
+.moreBox a{
+  width: max-content;
+  border: 2px solid #000;
+  padding:10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 13px;
+}
+.moreBox a img{
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.bgColor01{
+  background-color: #fff;
+}
+.bgColor02{
+  background-color: #F5F4F2;
+}
+.bgColor03{
+  background-color: #191626;
+  color: #73737C;
+}
+

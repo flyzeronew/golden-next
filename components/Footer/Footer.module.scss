@@ -1,0 +1,37 @@
+.footer{
+    color: #73737C;
+    font-weight: 500;
+    line-height: normal;
+    padding:50px 0;
+    background-color: #141324;
+}
+.footer .logoBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .logo{
+    width: 106px;
+    overflow:hidden;
+    margin-bottom: 15px;
+}
+.footer .copyright{
+    font-weight: 400;
+    font-size: 12px;
+}
+.footer .community{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.footer .community a{
+    width: 32px;
+    aspect-ratio: 1/1;
+}
+.footer .community a img{
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+@media (max-width:1023px) {
+
+}
