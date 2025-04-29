@@ -1,5 +1,6 @@
 import CustomHead from '../components/CustomHead'
 import ImageCarousel from '../components/GoldenPage/ImageCarousel'
+import ImageCarousel2 from '../components/GoldenPage/ImageCarousel2'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from './goldenPage.module.scss';
@@ -321,6 +322,7 @@ const GoldenPage = (props) => {
                     </a>
                   </div>
                 </div>
+                <ImageCarousel2/>
             </div>
           </section>
           <section className={cx("bgColor02")}>
