@@ -23,6 +23,9 @@
     display: flex;
     justify-content: center;
 }
+.homePage .kvBox .logo .img{
+    width: 330px;
+}
 .homePage .kvBox .txtBox .txt{
     font-size: 16px;
     letter-spacing: 1px;
@@ -102,6 +105,11 @@
     font-weight: 500;
     font-size: 13px;
     color: #8B8182;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
 }
 .awardsBox .arraw{
     width: 16px;
@@ -150,11 +158,11 @@
 // 獎項區塊 ed
 
 // 焦點新聞區塊
-.focusBox{
-
-}
 .focusBox .title{
     font-size: 42px;
+    margin-bottom: 30px;
+}
+.focusBox :global(.moreBox){
     margin-bottom: 30px;
 }
 .focusBox .firstNews a{
@@ -194,7 +202,6 @@
     font-size: 28px;
     -webkit-line-clamp: 4;
 }
-
 .focusBox .list{
     margin-bottom: 30px;
 }
@@ -209,5 +216,85 @@
     font-size: 22px;
     -webkit-line-clamp: 3;
 }
+@media (max-width:1023px) {
+    .focusBox .time{
+        font-weight: 400;
+        font-size: 13px;
+        color: #98836B;
+        margin-bottom: 5px;
+    }
+    .focusBox .title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .focusBox .firstNews .txt{
+        font-size: 24px;
+        -webkit-line-clamp: 3;
+    }
+    .focusBox .list .txt{
+        font-size: 20px;
+        -webkit-line-clamp: 3;
+    }
+    .focusBox .firstNews{
+        margin-bottom: 30px;
+    }
+    .focusBox .firstNews a{
+        display: block;
+    }
+    .focusBox .firstNews .imgBox{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .focusBox .firstNews .txtBox{
+        width: 100%;
+    }
+    .focusBox .list ul{
+        display: block;
+    }
+    .focusBox .list ul li{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .focusBox .list ul li:last-child{
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+    }
+    .focusBox .list ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .focusBox .list .imgBox{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+    .focusBox .list .imgBox .img{
+        margin-bottom: 0;
+    }
+    .focusBox .list .txtBox{
+        width: 65%;
+    }
+    .focusBox .list .img{
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .focusBox .list .img img {
+        transform: scale(2);
+        transform-origin: center center;
+    }
+}
+@media (max-width:359px) {
+
+}
+
 
 // 焦點新聞區塊ed

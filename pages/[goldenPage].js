@@ -1,4 +1,5 @@
 import CustomHead from '../components/CustomHead'
+import ImageCarousel from '../components/GoldenPage/ImageCarousel'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import styles from './goldenPage.module.scss';
@@ -17,7 +18,7 @@ const GoldenPage = (props) => {
         url=''
         ogTitle='2025第36屆金曲獎直播＆得獎名單｜紅毯星光大道一次看'
         ogImage='222'
-      />        
+      />
       <Header menu={menu} />
       <main className={cx("homePage")}>
 
@@ -167,7 +168,7 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/focus-img01.jpg`} alt="img" width={640} height={359} />
+                            <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -181,7 +182,7 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/focus-img01.jpg`} alt="img" width={640} height={359} />
+                            <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -195,7 +196,7 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/focus-img01.jpg`} alt="img" width={640} height={359} />
+                            <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -209,7 +210,7 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/focus-img01.jpg`} alt="img" width={640} height={359} />
+                            <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -227,10 +228,15 @@ const GoldenPage = (props) => {
                     <span>看更多</span>
                     <img src={`${appUrl}/golden/images/arrow_upward.svg`} alt="logo" width={16} height={16} />
                   </a>
-                </div>
-                
+                </div>                
               </div>
+
+
+              <ImageCarousel/>
             </div>
+
+
+            
           </section>
           
           <section>

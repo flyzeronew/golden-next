@@ -1,0 +1,90 @@
+.imageCarousel .carousel{
+    width: 122.2%;
+    padding:50px;
+    position: relative;
+}
+.imageCarousel :global(.frameBox){
+    position: relative;
+    overflow: hidden;
+}
+.imageCarousel .carousel .mask{
+    width: 260px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #F5F4F2;
+    z-index: 1;
+}
+.imageCarousel .box{    
+    padding: 7px;
+    padding-bottom: 30px;
+}
+.imageCarousel .box .img{
+    aspect-ratio: 160/213;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+.imageCarousel .box .txt{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.imageCarousel .box .shortlisted{
+    width: max-content;
+    margin: 0 auto ;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.imageCarousel :global(button.slick-prev),
+.imageCarousel :global(button.slick-next)
+{
+    top:38%;
+    width: 32px;
+    height: 32px;
+}
+.imageCarousel :global(button.slick-prev:before), 
+.imageCarousel :global(button.slick-next:before)
+{
+    content: '';
+}
+
+.imageCarousel :global(button.slick-prev){
+    left: -40px;
+    background: url(/golden/images/carousel-arraw-l.svg) no-repeat center center;
+    background-size: 100%;
+    background-color: #F5F4F2;
+    z-index: 2;
+}
+.imageCarousel :global(button.slick-next){
+    right: 163px;
+    background: url(/golden/images/carousel-arraw-r.svg) no-repeat center center;
+    background-size: 100%;
+    background-color: #F5F4F2;
+    z-index: 2;
+}
+@media (max-width:767px) {
+    .imageCarousel .carousel{
+        width: 100%;
+    }
+    .imageCarousel .carousel .mask{
+        display: none;
+    }
+    .imageCarousel .box .txt{
+        font-family: "Zen Old Mincho";
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .imageCarousel .carousel{
+        padding:50px 0;
+    }
+    .imageCarousel :global(.frameBox){
+        padding: 0;
+    }
+}
