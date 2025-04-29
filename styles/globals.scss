@@ -75,7 +75,8 @@ img{
     padding:0 15px;
   }
 }
-.moreBox a{
+
+.moreBox a,.moreBox.dark a{
   width: max-content;
   border: 2px solid #000;
   padding:10px 30px;
@@ -87,10 +88,15 @@ img{
   font-weight: 500;
   font-size: 13px;
 }
-.moreBox a img{
+.moreBox a img,.moreBox.dark a img{
   width: 20px;
   aspect-ratio: 1/1;
 }
+.moreBox.dark a{
+  border: 2px solid #ffffff;
+}
+
+
 .bgColor01{
   background-color: #fff;
 }
@@ -98,7 +104,7 @@ img{
   background-color: #F5F4F2;
 }
 .bgColor03{
-  background-color: #191626;
-  color: #73737C;
+  background-color: #141324;
+  color: #fff;
 }
 

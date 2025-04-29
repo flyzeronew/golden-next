@@ -13,7 +13,6 @@ function ImageCarousel(props) {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
-        swipeToSlide:false,
         arrows: true,
         autoplay: false,
         autoplaySpeed:5000,

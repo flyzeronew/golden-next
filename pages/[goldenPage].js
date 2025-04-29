@@ -228,18 +228,102 @@ const GoldenPage = (props) => {
                     <span>看更多</span>
                     <img src={`${appUrl}/golden/images/arrow_upward.svg`} alt="logo" width={16} height={16} />
                   </a>
-                </div>                
+                </div>
               </div>
-
-
               <ImageCarousel/>
             </div>
-
-
-            
           </section>
           
-          <section>
+          <section className={cx("bgColor03")}>
+
+            <div className={cx("focusBox","dark")}>
+                <div className={cx("frameBox")}>
+                  <div className={cx("title")}>金曲專題</div>
+                  <div className={cx("firstNews")}>
+                    <a href='#'>
+                      <div className={cx("imgBox")}>
+                        <div className={cx("img")}>
+                          <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                        </div>
+                      </div>
+                      <div className={cx("txtBox")}>
+                        <div className={cx("time")}>2024.06.30 </div>
+                        <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div className={cx("list")}>
+                    <ul>
+
+                      <li>
+                        <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("time")}>2024.06.30 </div>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("time")}>2024.06.30 </div>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                        </a>
+                      </li>                    
+                      
+                      <li>
+                        <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("time")}>2024.06.30 </div>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                        </a>
+                      </li>
+                      
+                      <li>
+                        <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("time")}>2024.06.30 </div>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+
+                  <div className={cx("moreBox dark")}>
+                    <a href='#'>
+                      <span>看更多</span>
+                      <img src={`${appUrl}/golden/images/arrow_upward_white.svg`} alt="logo" width={16} height={16} />
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </section>
+          <section className={cx("bgColor02")}>
 
           </section>
         </article>
