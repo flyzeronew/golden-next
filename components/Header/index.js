@@ -32,7 +32,7 @@ const Header = (props) => {
                     <div className={cx("list")}>
                         <ul>
                             <li>
-                                <a href='/goldenmusic2025' className={cx("act")}>
+                                <a href={`${appUrl}/goldenmusic2025`} className={cx("act")}>
                                     金曲36
                                 </a>
                             </li>
