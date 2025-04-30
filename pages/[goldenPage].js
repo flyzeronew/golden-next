@@ -4,7 +4,7 @@ import ImageCarousel2 from '../components/GoldenPage/ImageCarousel2'
 import ImageCarousel3 from '../components/GoldenPage/ImageCarousel3'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Sponsor from '../components/Sponsor'
+import Sponsor from '../components/GoldenPage/Sponsor'
 import styles from './goldenPage.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);

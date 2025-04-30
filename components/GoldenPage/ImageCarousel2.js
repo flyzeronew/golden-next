@@ -38,10 +38,10 @@ function ImageCarousel2(props) {
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                </div>
-                                <div className={cx("txtBox")}>
-                                    <div className={cx("name")}>圖輯名稱</div>
-                                    <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    <div className={cx("txtBox")}>
+                                        <div className={cx("name")}>圖輯名稱</div>
+                                        <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -49,54 +49,54 @@ function ImageCarousel2(props) {
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <div className={cx("txtBox")}>
+                                        <div className={cx("name")}>圖輯名稱</div>
+                                        <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    </div>
                                 </div>
-                                <div className={cx("txtBox")}>
-                                    <div className={cx("name")}>圖輯名稱</div>
-                                    <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
-                                </div>                         
                             </a>
                         </div>
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <div className={cx("txtBox")}>
+                                        <div className={cx("name")}>圖輯名稱</div>
+                                        <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    </div>
                                 </div>
-                                <div className={cx("txtBox")}>
-                                    <div className={cx("name")}>圖輯名稱</div>
-                                    <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
-                                </div>                          
                             </a>
                         </div>
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <div className={cx("txtBox")}>
+                                        <div className={cx("name")}>圖輯名稱</div>
+                                        <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    </div>
                                 </div>
-                                <div className={cx("txtBox")}>
-                                    <div className={cx("name")}>圖輯名稱</div>
-                                    <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
-                                </div>                          
                             </a>
                         </div>
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <div className={cx("txtBox")}>
+                                        <div className={cx("name")}>圖輯名稱</div>
+                                        <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    </div>
                                 </div>
-                                <div className={cx("txtBox")}>
-                                    <div className={cx("name")}>圖輯名稱</div>
-                                    <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
-                                </div>                         
                             </a>
                         </div>
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                </div>
-                                <div className={cx("txtBox")}>
-                                    <div className={cx("name")}>圖輯名稱</div>
-                                    <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    <div className={cx("txtBox")}>
+                                        <div className={cx("name")}>圖輯名稱</div>
+                                        <div className={cx("txt")}>圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
+                                    </div>
                                 </div>
                             </a>
                         </div>
