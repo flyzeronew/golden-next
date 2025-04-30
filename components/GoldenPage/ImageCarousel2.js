@@ -33,9 +33,8 @@ function ImageCarousel2(props) {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
         autoplay: false,
         autoplaySpeed:5000,        
     };
@@ -118,7 +117,7 @@ function ImageCarousel2(props) {
                 </div>
             </div>
 
-            <div className={cx("imageLightBox")}>
+            <div className={cx("imageLightBox","show")}>
                 <div className={cx("box")}>
                     <div className={cx("titleBox")}>
                         <div className={cx("title")}>金曲圖輯</div>
@@ -127,25 +126,49 @@ function ImageCarousel2(props) {
                         </div>
                     </div>
                     <div className={cx("picList")}>
-                        <div className={cx("picBox")}>
-                            <div className={cx("imgBox")}>
-                            <img src={`${appUrl}/golden/images/esg02.jpg`} alt="logo" width={1920} height={1080} />
-                            </div>
-                            <div className={cx("txtBox")}>
-                                <div className={cx("nameBox")}>
-                                    <div className={cx("name")}>女星紅毯</div>
-                                    <div className={cx("page")}>
-                                        第 <span>2</span>/<span>20</span> 筆 
+                        <Slider {...imageLightBoxSettings}>
+                            <div className={cx("picBox")}>
+                                <div className={cx("imgBox")}>
+                                <img src={`${appUrl}/golden/images/esg02.jpg`} alt="logo" width={1920} height={1080} />
+                                </div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("nameBox")}>
+                                        <div className={cx("name")}>女星紅毯</div>
+                                        <div className={cx("page")}>
+                                            第 <span>2</span>/<span>20</span> 筆 
+                                        </div>
+                                    </div>
+                                    <div className={cx("txt")}>
+                                        入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                                    </div>
+                                    <div className={cx("time")}>
+                                        2024.06.30
                                     </div>
                                 </div>
-                                <div className={cx("txt")}>
-                                    入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                            </div>
+
+                            <div className={cx("picBox")}>
+                                <div className={cx("imgBox")}>
+                                    <img src={`${appUrl}/golden/images/esg02.jpg`} alt="logo" width={1920} height={1080} />
                                 </div>
-                                <div className={cx("time")}>
-                                    2024.06.30
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("nameBox")}>
+                                        <div className={cx("name")}>女星紅毯</div>
+                                        <div className={cx("page")}>
+                                            第 <span>2</span>/<span>20</span> 筆 
+                                        </div>
+                                    </div>
+                                    <div className={cx("txt")}>
+                                        入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                                        入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                                        入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                                    </div>
+                                    <div className={cx("time")}>
+                                        2024.06.30
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Slider>
                     </div>
                 </div>
             </div>

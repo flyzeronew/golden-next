@@ -113,14 +113,21 @@
     }
 }
 // 彈出燈箱
+.picList{
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
 .imageLightBox{
     position: fixed;
     width: 100%;
     height: 100vh;
     background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
     top:0;
     z-index: 3;
     display: none;
+    overflow-y: auto;
 }
 .imageLightBox.show{
     display: block;
@@ -141,20 +148,14 @@
     overflow: hidden;
     aspect-ratio: 16/9;
     background-color: #ccc;
-}
-.imageLightBox .imgBox{
-    width: 100%;
-    overflow: hidden;
-    aspect-ratio: 16/9;
-    background-color: #ccc;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.imageLightBox .imgBox img{
-    width: auto;
-    height: 100%;
-}
+// .imageLightBox .imgBox img{
+//     width: auto;
+//     height: 100%;
+// }
 .imageLightBox .txtBox{
     padding: 15px 30px;
     background-color: #fff;
@@ -182,10 +183,16 @@
     margin-bottom: 10px;
 }
 .imageLightBox .box .txt{
+    height: 72px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 10px;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
 }
 .imageLightBox .box .time{
     font-weight: 400;
@@ -196,9 +203,55 @@
     width: 32px;
     aspect-ratio: 1/1;
     cursor: pointer;
+    line-height: 0;
 }
-.picList{
-    max-width: 900px;
-    margin: 0 auto;
+.imageLightBox :global(button.slick-prev),
+.imageLightBox :global(button.slick-next)
+{
+    top:45%;
+    width: 40px;
+    height: 40px;
+}
+.imageLightBox :global(button.slick-prev:before), 
+.imageLightBox :global(button.slick-next:before)
+{
+    content: '';
+}
+.imageLightBox :global(.slick-list),
+.imageLightBox :global(.slick-slider)
+{
+    position:unset;
+}
+.imageLightBox :global(button.slick-prev){
+    left: 0;
+    background: url(/golden/images/carousel-arraw-l3.svg) no-repeat center center;
+    background-size: 100%;
+    z-index: 2;
+}
+.imageLightBox :global(button.slick-next){
+    right: 0;
+    background: url(/golden/images/carousel-arraw-r3.svg) no-repeat center center;
+    background-size: 100%;
+    z-index: 2;
+}
+@media (max-width:767px) {
+    .imageLightBox .box .xx{
+        width: 24px;
+    }
+    .imageLightBox .titleBox{
+        padding:0 15px;
+    }
+    .imageLightBox .box{
+        padding:100px 0 0;
+    }
+    .imageLightBox .txtBox{
+        padding: 15px;
+    }
+    .imageLightBox .titleBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
 }
 // 彈出燈箱 ed
