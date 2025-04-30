@@ -1,14 +1,14 @@
 .imageCarousel2{
-    padding:50px 0 ;
+    position: relative;
 }
 .imageCarousel2 .title{
     font-weight: 500;
     font-size: 26px;
     margin-bottom: 20px;
+    padding-left: 8px;
 }
 .imageCarousel2 .carousel{
     width: 100%;
-    position: relative;
 }
 .imageCarousel2 :global(.frameBox){
     position: relative;
@@ -44,11 +44,16 @@
     font-family: "Zen Old Mincho";
     font-weight: 600;
     font-size: 22px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
 }
 .imageCarousel2 :global(button.slick-prev),
 .imageCarousel2 :global(button.slick-next)
 {
-    top:-35px;
+    top:20px;
     width: 32px;
     height: 32px;
 }
@@ -57,7 +62,11 @@
 {
     content: '';
 }
-
+.imageCarousel2 :global(.slick-list),
+.imageCarousel2 :global(.slick-slider)
+{
+    position:unset;
+}
 .imageCarousel2 :global(button.slick-prev){
     left: auto;
     right: 50px;
@@ -72,23 +81,34 @@
     z-index: 2;
 }
 @media (max-width:767px) {
+    .imageCarousel2 :global(button.slick-prev),
+    .imageCarousel2 :global(button.slick-next)
+    {
+        top:20px;
+    }
+    .imageCarousel2{
+        position: relative;
+    }
     .imageCarousel2 .carousel{
-        width: 100%;
+        width: 150%;
     }
     .imageCarousel2 .carousel .mask{
         display: none;
     }
     .imageCarousel2 .box .txt{
-        font-family: "Zen Old Mincho";
-        font-weight: 600;
         font-size: 24px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .imageCarousel2 .carousel{
-        padding:50px 0;
     }
     .imageCarousel2 :global(.frameBox){
+        overflow: hidden;
         padding: 0;
+        position: unset;
+        padding-left: 13px;
+    }
+    .imageCarousel2 :global(button.slick-prev){
+        left: auto;
+        right: 57px;
+    }
+    .imageCarousel2 :global(button.slick-next){
+        right: 15px;
     }
 }

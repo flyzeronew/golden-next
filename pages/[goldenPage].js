@@ -231,7 +231,7 @@ const GoldenPage = (props) => {
                   </a>
                 </div>
               </div>
-              <ImageCarousel/>
+              <ImageCarousel data=''/>
             </div>
           </section>
           
@@ -321,9 +321,12 @@ const GoldenPage = (props) => {
                       <img src={`${appUrl}/golden/images/arrow_upward_white.svg`} alt="logo" width={16} height={16} />
                     </a>
                   </div>
-                </div>
-                <ImageCarousel2/>
+                </div>                
             </div>
+          </section>
+
+          <section className={cx("bgColor03")}>
+            <ImageCarousel2 title='金曲圖輯' data='' />
           </section>
           <section className={cx("bgColor02")}>
 

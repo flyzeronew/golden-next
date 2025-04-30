@@ -6,7 +6,9 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 const cx = classnames.bind(styles);
 const appUrl = process.env.NEXT_PUBLIC_APP_URL;
-function ImageCarousel(props) {
+function ImageCarousel2(props) {
+    const title = props.title || '';
+    const data = props.data || '';
     const settings = {
         dots: false,
         infinite: true,
@@ -15,13 +17,22 @@ function ImageCarousel(props) {
         slidesToScroll: 1,
         arrows: true,
         autoplay: false,
-        autoplaySpeed:5000,        
+        autoplaySpeed:5000,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+        ],       
     };
     return (
         <div className={cx("imageCarousel2")}>
             <div className={cx("frameBox")}>
                 <div className={cx("carousel")}>
-                    <div className={cx("title")}>金曲圖輯</div>
+                    <div className={cx("title")}>{title}</div>
                     <Slider {...settings}>                    
                         <div className={cx("box")}>
                             <a href="#">
@@ -95,4 +106,4 @@ function ImageCarousel(props) {
         </div>
     )
 }
-export default ImageCarousel;
+export default ImageCarousel2;
