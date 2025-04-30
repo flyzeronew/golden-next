@@ -112,3 +112,93 @@
         right: 15px;
     }
 }
+// 彈出燈箱
+.imageLightBox{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    top:0;
+    z-index: 3;
+    display: none;
+}
+.imageLightBox.show{
+    display: block;
+}
+.imageLightBox .box{
+    max-width: 1280px;
+    margin:0 auto;
+    padding:100px 30px 0;
+}
+.imageLightBox .titleBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.imageLightBox .imgBox{
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    background-color: #ccc;
+}
+.imageLightBox .imgBox{
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageLightBox .imgBox img{
+    width: auto;
+    height: 100%;
+}
+.imageLightBox .txtBox{
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #0F0E1B;
+}
+.imageLightBox .txtBox{
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #0F0E1B;
+}
+.imageLightBox .box .nameBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imageLightBox .box .page{
+    color: #aaaaaa;
+    font-weight: 600;
+    font-size: 13px;
+}
+.imageLightBox .box .name{
+    font-weight: 600;
+    font-size: 13px;
+    color: #AB8A49;
+    margin-bottom: 10px;
+}
+.imageLightBox .box .txt{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.imageLightBox .box .time{
+    font-weight: 400;
+    font-size: 13px;
+    color: #8B8182;
+}
+.imageLightBox .box .xx{
+    width: 32px;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+.picList{
+    max-width: 900px;
+    margin: 0 auto;
+}
+// 彈出燈箱 ed

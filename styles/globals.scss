@@ -108,3 +108,17 @@ img{
   color: #fff;
 }
 
+.playIcon{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.playIcon .icon{
+  width: 60px;
+  height: 60px;
+  aspect-ratio: 1/1;
+  background: url(/golden/images/play-icon.png) no-repeat center center;
+}

@@ -345,6 +345,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
+                              <div className={cx("playIcon")}>
+                                <div className={cx("icon")}></div>
+                              </div>                            
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </div>
                           </div>
@@ -357,6 +360,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
+                              <div className={cx("playIcon")}>
+                                <div className={cx("icon")}></div>
+                              </div>                            
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </div>
                           </div>
@@ -369,6 +375,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
+                              <div className={cx("playIcon")}>
+                                <div className={cx("icon")}></div>
+                              </div>                            
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </div>
                           </div>
