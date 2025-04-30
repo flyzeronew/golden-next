@@ -117,7 +117,7 @@ function ImageCarousel2(props) {
                 </div>
             </div>
 
-            <div className={cx("imageLightBox","show")}>
+            <div className={cx("imageLightBox")}>
                 <div className={cx("box")}>
                     <div className={cx("titleBox")}>
                         <div className={cx("title")}>金曲圖輯</div>
