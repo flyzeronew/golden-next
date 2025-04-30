@@ -1,90 +1,100 @@
-.imageCarousel .carousel{
-    width: 122.2%;
-    padding:50px 50px 0;
-    position: relative;
+.imageCarousel3 .carousel{
+    width: 130%;
+    padding:0;
 }
-.imageCarousel :global(.frameBox){
+.imageCarousel3 .title{
+    font-size: 42px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+.imageCarousel3 :global(.frameBox){
     position: relative;
     overflow: hidden;
 }
-.imageCarousel .carousel .mask{
-    width: 260px;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    background-color: #F5F4F2;
-    z-index: 1;
-}
-.imageCarousel .box{    
+.imageCarousel3 .box{    
     padding: 7px;
     padding-bottom: 30px;
 }
-.imageCarousel .box .img{
+.imageCarousel3 .box .img{
     aspect-ratio: 160/213;
-    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
-.imageCarousel .box .txt{
+.imageCarousel3 .box .txt{
     font-family: "Zen Old Mincho";
     font-weight: 600;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 10px;
+    font-size: 22px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
 }
-.imageCarousel .box .shortlisted{
-    width: max-content;
-    margin: 0 auto ;
-    padding-bottom: 5px;
-    font-weight: 500;
-    font-size: 13px;
-    text-align: center;
-    border-bottom: 1px solid #000;
-}
-.imageCarousel :global(button.slick-prev),
-.imageCarousel :global(button.slick-next)
+.imageCarousel3 :global(button.slick-prev),
+.imageCarousel3 :global(button.slick-next)
 {
-    top:38%;
+    top:40px;
     width: 32px;
     height: 32px;
 }
-.imageCarousel :global(button.slick-prev:before), 
-.imageCarousel :global(button.slick-next:before)
+.imageCarousel3 :global(button.slick-prev:before), 
+.imageCarousel3 :global(button.slick-next:before)
 {
     content: '';
 }
-
-.imageCarousel :global(button.slick-prev){
-    left: -40px;
+.imageCarousel3 :global(.slick-list),
+.imageCarousel3 :global(.slick-slider)
+{
+    position:unset;
+}
+.imageCarousel3 :global(button.slick-prev){
+    left: auto;
+    right: 42px;
     background: url(/golden/images/carousel-arraw-l.svg) no-repeat center center;
     background-size: 100%;
     background-color: #F5F4F2;
     z-index: 2;
 }
-.imageCarousel :global(button.slick-next){
-    right: 163px;
+.imageCarousel3 :global(button.slick-next){
+    left: auto;
+    right: 0;
     background: url(/golden/images/carousel-arraw-r.svg) no-repeat center center;
     background-size: 100%;
     background-color: #F5F4F2;
     z-index: 2;
 }
 @media (max-width:767px) {
-    .imageCarousel .carousel{
-        width: 100%;
+    .imageCarousel3 .carousel{
+        width: 150%;
     }
-    .imageCarousel .carousel .mask{
+    .imageCarousel3 .title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .imageCarousel3 :global(button.slick-prev),
+    .imageCarousel3 :global(button.slick-next)
+    {
+        top:85px;
+    }
+    .imageCarousel3 :global(button.slick-prev){
+        left: auto;
+        right: 55px;
+    }
+    .imageCarousel3 :global(button.slick-next){
+        left: auto;
+        right: 15px;
+    }
+    .imageCarousel3 .carousel .mask{
         display: none;
     }
-    .imageCarousel .box .txt{
-        font-family: "Zen Old Mincho";
+    .imageCarousel3 .box .txt{
         font-weight: 600;
-        font-size: 24px;
-        text-align: center;
-        margin-bottom: 10px;
+        font-size: 20px;
     }
-    .imageCarousel .carousel{
+    .imageCarousel3 .carousel{
         padding:50px 0;
     }
-    .imageCarousel :global(.frameBox){
+    .imageCarousel3 :global(.frameBox){
         padding: 0;
+        padding-left: 15px;
     }
 }

@@ -331,5 +331,47 @@
         border-bottom:0;
     }
 }
-
 // 焦點新聞區塊 深色ed
+
+// 精彩瞬間
+.playListBox li {
+    margin-bottom: 30px;
+}
+.playListBox li a{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.playListBox .imgBox,
+.playListBox .txtBox
+{
+    width: 50%;
+}
+.playListBox .img{
+    line-height: 0;
+    aspect-ratio: 16/9;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.playListBox .txt{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    font-size: 22px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+}
+@media (max-width:1023px) {
+    .playListBox li a{
+        display: block;
+    }
+    .playListBox .imgBox,
+    .playListBox .txtBox{
+        width: 100%;
+    }
+    .playListBox .imgBox{
+        margin-bottom:20px;
+    }
+}
+// 精彩瞬間ed

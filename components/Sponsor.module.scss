@@ -1,0 +1,23 @@
+
+// 贊助
+.sponsorBox .list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    border-top: 1px solid #000;
+    padding: 50px 0;
+}
+.sponsorBox .list a{
+    width: calc((100% - 75px)/6);
+}
+@media (max-width:1023px) {
+    .sponsorBox .list{
+        padding: 30px 0;
+    }
+    .sponsorBox .list a{
+        width: calc((100% - 60px)/4);
+    }
+}
+
+// 贊助ed

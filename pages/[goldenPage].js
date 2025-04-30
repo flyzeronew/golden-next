@@ -1,8 +1,10 @@
 import CustomHead from '../components/CustomHead'
 import ImageCarousel from '../components/GoldenPage/ImageCarousel'
 import ImageCarousel2 from '../components/GoldenPage/ImageCarousel2'
+import ImageCarousel3 from '../components/GoldenPage/ImageCarousel3'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import Sponsor from '../components/Sponsor'
 import styles from './goldenPage.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
@@ -328,11 +330,65 @@ const GoldenPage = (props) => {
           <section className={cx("bgColor03")}>
             <ImageCarousel2 title='金曲圖輯' data='' />
           </section>
+
           <section className={cx("bgColor02")}>
-
+            <ImageCarousel3 title='金曲專題2' data='' />
           </section>
-        </article>
 
+          <section className={cx("bgColor02")}>
+            <div className={cx("playListBox")}>
+              <div className={cx("frameBox")}>
+
+                <div className={cx("list")}>
+                  <ul>
+                    <li>
+                      <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href='#'>
+                          <div className={cx("imgBox")}>
+                            <div className={cx("img")}>
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </div>
+                          </div>
+                          <div className={cx("txtBox")}>
+                            <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                          </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <section className={cx("bgColor02")}>
+            <Sponsor/>
+          </section>
+
+        </article>
       </main>
       <Footer />
     </div>
