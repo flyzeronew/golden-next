@@ -209,7 +209,7 @@ function ImageCarousel2(props) {
                                     <div className={cx("nameBox")}>
                                         <div className={cx("name")}>女星紅毯</div>
                                         <div className={cx("page")}>
-                                            第 <span>1</span>/<span>3</span> 筆 
+                                            第 <span>1</span>/<span>4</span> 筆 
                                         </div>
                                     </div>
                                     <div className={cx("txt")}>
@@ -244,7 +244,7 @@ function ImageCarousel2(props) {
                                     <div className={cx("nameBox")}>
                                         <div className={cx("name")}>女星紅毯</div>
                                         <div className={cx("page")}>
-                                            第 <span>2</span>/<span>3</span> 筆 
+                                            第 <span>2</span>/<span>4</span> 筆 
                                         </div>
                                     </div>
                                     <div className={cx("txt")}>
@@ -279,7 +279,7 @@ function ImageCarousel2(props) {
                                     <div className={cx("nameBox")}>
                                         <div className={cx("name")}>女星紅毯</div>
                                         <div className={cx("page")}>
-                                            第 <span>3</span>/<span>3</span> 筆 
+                                            第 <span>3</span>/<span>4</span> 筆 
                                         </div>
                                     </div>
                                     <div className={cx("txt")}>
