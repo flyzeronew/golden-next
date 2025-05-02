@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import LazyLoad from 'react-lazyload'
 import styles from './ImageCarousel3.module.scss';
 import classnames from "classnames/bind";
 import Slider from "react-slick"
@@ -39,19 +38,7 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
-                                </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
-                            </a>
-                        </div>
-                        <div className={cx("box")}>
-                            <a href="#">
-                                <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
                                 <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
                             </a>
@@ -67,9 +54,7 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
                                 <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
                             </a>
@@ -77,9 +62,7 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
                                 <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
                             </a>
@@ -87,9 +70,15 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                </div>
+                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                            </a>
+                        </div>
+                        <div className={cx("box")}>
+                            <a href="#">
+                                <div className={cx("img")}>
+                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
                                 <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
                             </a>

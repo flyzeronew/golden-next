@@ -229,11 +229,11 @@ function ImageCarousel2(props) {
                                     }}></div>
                                     <div className={cx("img")}>
                                         <img 
-                                            ref={el => imgRefs.current[0] = el} 
+                                            ref={el => imgRefs.current[1] = el} 
                                             src={`${appUrl}/golden/images/esg01.jpg`}
                                             alt="img" 
                                             style={
-                                                imgSize[0] ? 
+                                                imgSize[1] ? 
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
@@ -264,11 +264,11 @@ function ImageCarousel2(props) {
                                     }}></div>
                                     <div className={cx("img")}>
                                         <img 
-                                            ref={el => imgRefs.current[0] = el} 
+                                            ref={el => imgRefs.current[2] = el} 
                                             src={`${appUrl}/golden/images/carousel-img4.jpg`}
                                             alt="img" 
                                             style={
-                                                imgSize[0] ? 
+                                                imgSize[2] ? 
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
@@ -302,11 +302,11 @@ function ImageCarousel2(props) {
                                     }}></div>
                                     <div className={cx("img")}>
                                         <img 
-                                            ref={el => imgRefs.current[0] = el} 
+                                            ref={el => imgRefs.current[3] = el} 
                                             src={`${appUrl}/golden/images/esg02.jpg`}
                                             alt="img" 
                                             style={
-                                                imgSize[0] ? 
+                                                imgSize[3] ? 
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
