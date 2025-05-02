@@ -19,7 +19,6 @@ const Header = (props) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    console.log(isScrolled);
     return (
         <header>
             <div className={cx("menu" , isScrolled ? 'act' : '' )}>

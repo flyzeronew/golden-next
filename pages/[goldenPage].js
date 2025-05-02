@@ -338,7 +338,7 @@ const GoldenPage = (props) => {
           <section className={cx("bgColor02")}>
             <div className={cx("playListBox")}>
               <div className={cx("frameBox")}>
-
+                <div className={cx("title")}>精彩瞬間</div>
                 <div className={cx("list")}>
                   <ul>
                     <li>

@@ -51,7 +51,7 @@
         font-size: 32px;
     }
     .homePage article section{
-        padding: 30px 0;
+        padding: 48px 0;
     }
 }
 @media (max-width:450px) {
@@ -76,6 +76,7 @@
 }
 .awardsBox .list li:last-child{
     margin-bottom: 0px;
+    padding-bottom: 0;
     border-bottom: 0px;
 }
 .awardsBox .list li a{
@@ -119,12 +120,12 @@
 }
 @media (max-width:1023px) {
     .awardsBox .list li{
-        margin-bottom: 15px;
-        padding-bottom: 15px;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
         border-bottom:1px solid #EFEBE6;
     }
     .awardsBox .list{
-        margin-bottom: 15px;
+        margin-bottom: 24px;
     }
     .awardsBox .list li a{
         column-gap: 15px;
@@ -161,6 +162,10 @@
 .focusBox .title{
     font-size: 42px;
     margin-bottom: 30px;
+    background: linear-gradient(to right,  #efebe6 1%,#e3c8a5 49%,#f6f0e8 100%);
+    background: -webkit-linear-gradient(to right,  #efebe6 1%,#e3c8a5 49%,#f6f0e8 100%);
+    background-clip: text;
+    color: transparent;
 }
 .focusBox .firstNews a{
     display: flex;
@@ -200,7 +205,7 @@
     -webkit-line-clamp: 4;
 }
 .focusBox .list{
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 .focusBox .list ul{
     display: flex;
@@ -233,7 +238,7 @@
         -webkit-line-clamp: 3;
     }
     .focusBox .firstNews{
-        margin-bottom: 30px;
+        margin-bottom: 24px;
     }
     .focusBox .firstNews a{
         display: block;
@@ -245,16 +250,19 @@
     .focusBox .firstNews .txtBox{
         width: 100%;
     }
+    .focusBox .list {
+        margin-bottom: 24px;
+    }
     .focusBox .list ul{
         display: block;
     }
     .focusBox .list ul li{
-        margin-bottom: 20px;
-        padding-bottom: 20px;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
         border-bottom: 1px solid rgba(0,0,0,0.1);
     }
     .focusBox .list ul li:last-child{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         padding-bottom: 0px;
         border-bottom: 0px;
     }
@@ -351,7 +359,12 @@
     position: relative;
     line-height: 0;
     aspect-ratio: 16/9;
+    overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.playListBox .title{
+    margin-bottom: 30px;
+    font-size: 42px;
 }
 .playListBox .txt{
     font-family: "Zen Old Mincho";
@@ -364,6 +377,10 @@
     -webkit-line-clamp: 2;
 }
 @media (max-width:1023px) {
+    .playListBox .title{
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
     .playListBox li a{
         display: block;
     }
