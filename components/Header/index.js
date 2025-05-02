@@ -8,6 +8,7 @@ const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 
 const Header = (props) => {
     const menu = props.menu;
+    console.log(menu);
     const [isScrolled, setIsScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {

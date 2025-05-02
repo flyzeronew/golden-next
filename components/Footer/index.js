@@ -14,14 +14,17 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className={cx("community")}>
-                        <a href='https://news.tvbs.com.tw/' target='_blank' >
+                        <a href='https://www.facebook.com/tvbsfb/' target='_blank' >
                             <img src={`${appUrl}/golden/images/footer-fb-img.svg`} alt="logo" width={32} height={32} />
                         </a>
-                        <a href='https://news.tvbs.com.tw/' target='_blank' >
+                        <a href='https://www.youtube.com/channel/UC5nwNW4KdC0SzrhF9BXEYOQ' target='_blank' >
                             <img src={`${appUrl}/golden/images/footer-yt-img.svg`} alt="logo" width={32} height={32} />
                         </a>
-                        <a href='https://news.tvbs.com.tw/' target='_blank' >
+                        <a href='https://page.line.me/tvbsnews?openQrModal=true' target='_blank' >
                             <img src={`${appUrl}/golden/images/footer-ig-img.svg`} alt="logo" width={32} height={32} />
+                        </a>
+                        <a href='https://www.threads.com/@tvbslivenews?hl=zh-tw' target='_blank' >
+                            <img src={`${appUrl}/golden/images/footer-threads-img.svg`} alt="logo" width={32} height={32} />
                         </a>
                     </div>
                 </div>
