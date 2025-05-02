@@ -57,7 +57,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={160} offset={100} once>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
@@ -76,7 +83,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={160} offset={100} once>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
@@ -95,7 +109,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={160} offset={100} once>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad>                            
                           </div>
@@ -114,7 +135,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={160} offset={100} once>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
@@ -133,7 +161,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={160} offset={100} once>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
@@ -171,7 +206,14 @@ const GoldenPage = (props) => {
                   <a href='#'>
                     <div className={cx("imgBox")}>
                       <div className={cx("img")}>
-                        <LazyLoad height={359} offset={100} once>
+                        <LazyLoad 
+                          height={359} 
+                          offset={100} 
+                          placeholder={
+                            <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                          } 
+                          once 
+                        >
                           <img src={`${appUrl}/golden/images/focus-img01.jpg`} alt="img" width={640} height={359} />
                         </LazyLoad>
                       </div>
@@ -189,7 +231,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={359} offset={100} once>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </LazyLoad>                          
                           </div>
@@ -205,7 +254,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={359} offset={100} once>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </LazyLoad> 
                           </div>
@@ -221,7 +277,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={359} offset={100} once>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </LazyLoad> 
                           </div>
@@ -237,7 +300,14 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <LazyLoad height={359} offset={100} once>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
                               <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                             </LazyLoad> 
                           </div>
@@ -272,9 +342,16 @@ const GoldenPage = (props) => {
                     <a href='#'>
                       <div className={cx("imgBox")}>
                         <div className={cx("img")}>
-                            <LazyLoad height={359} offset={100} once>
-                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
-                            </LazyLoad>
+                          <LazyLoad 
+                            height={359} 
+                            offset={100} 
+                            placeholder={
+                              <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                            } 
+                            once 
+                          >
+                            <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                          </LazyLoad>
                         </div>
                       </div>
                       <div className={cx("txtBox")}>
@@ -290,7 +367,14 @@ const GoldenPage = (props) => {
                         <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
@@ -306,7 +390,14 @@ const GoldenPage = (props) => {
                         <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
@@ -322,7 +413,14 @@ const GoldenPage = (props) => {
                         <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
@@ -338,7 +436,14 @@ const GoldenPage = (props) => {
                         <a href='#'>
                           <div className={cx("imgBox")}>
                             <div className={cx("img")}>
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
@@ -384,7 +489,14 @@ const GoldenPage = (props) => {
                               <div className={cx("playIcon")}>
                                 <div className={cx("icon")}></div>
                               </div>                            
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
@@ -401,7 +513,14 @@ const GoldenPage = (props) => {
                               <div className={cx("playIcon")}>
                                 <div className={cx("icon")}></div>
                               </div>                            
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
@@ -418,7 +537,14 @@ const GoldenPage = (props) => {
                               <div className={cx("playIcon")}>
                                 <div className={cx("icon")}></div>
                               </div>                            
-                              <LazyLoad height={359} offset={100} once>
+                              <LazyLoad 
+                                height={359} 
+                                offset={100} 
+                                placeholder={
+                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                                } 
+                                once 
+                              >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
                               </LazyLoad>
                             </div>
