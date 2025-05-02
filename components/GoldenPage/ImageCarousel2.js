@@ -177,7 +177,13 @@ function ImageCarousel2(props) {
                 <div className={cx("box")}>
                     <div className={cx("titleBox")}>
                         <div className={cx("title")}>金曲圖輯</div>
-                        <div className={cx("xx")} onClick={lightBoxHideClick}>
+                        <div 
+                            className={cx("xx")} 
+                            onClick={() => {
+                                lightBoxHideClick();
+                                handleOpenLightbox();
+                            }}
+                        >
                             <img src={`${appUrl}/golden/images/close-btn.svg`} alt="xx" width={30} height={30} />
                         </div>
                     </div>
