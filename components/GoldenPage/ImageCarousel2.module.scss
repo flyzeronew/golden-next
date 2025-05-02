@@ -115,8 +115,12 @@
 // 彈出燈箱
 .picList{
     position: relative;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
+}
+.picList .picBox{
+    width: 100%;
 }
 .imageLightBox{
     position: fixed;
