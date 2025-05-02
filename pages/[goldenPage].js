@@ -1,4 +1,5 @@
 import { usePathname } from 'next/navigation'
+import LazyLoad from 'react-lazyload'
 import CustomHead from '../components/CustomHead'
 import ImageCarousel from '../components/GoldenPage/ImageCarousel'
 import ImageCarousel2 from '../components/GoldenPage/ImageCarousel2'
@@ -35,7 +36,7 @@ const GoldenPage = (props) => {
             <div className={cx("head")}></div>
             <div className={cx("logo")}>
               <div className={cx("img")}>
-                <img src={`${appUrl}/golden/images/goldenmusic2025-logo.svg`} alt="logo" width={330} height={264} />
+                  <img src={`${appUrl}/golden/images/goldenmusic2025-logo.svg`} alt="logo" width={330} height={264} />
               </div>
             </div>
             <div className={cx("txtBox")}>
@@ -56,7 +57,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            <LazyLoad once>
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -73,7 +76,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            <LazyLoad once>
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -90,7 +95,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            <LazyLoad once>
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad>                            
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -107,7 +114,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            <LazyLoad once>
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
@@ -124,7 +133,9 @@ const GoldenPage = (props) => {
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>
-                            <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            <LazyLoad once>
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
