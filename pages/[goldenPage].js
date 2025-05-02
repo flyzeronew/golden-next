@@ -9,12 +9,13 @@ import Sponsor from '../components/GoldenPage/Sponsor'
 import styles from './goldenPage.module.scss'
 import classNames from 'classnames/bind'
 
-const GoldenPage = (props) => {
+const GoldenPage = (props) => {  
   const cx = classNames.bind(styles);
   const appUrl = process.env.NEXT_PUBLIC_APP_URL;
   const ogImage = `${appUrl}/golden/images/og-img.jpg`;
   const pathname = usePathname();
   const url = `${appUrl}${pathname}`;
+  const pageName = pathname.split('/')[1];
   const menu = props.menu;  
   return (
     <div className="container" >
@@ -26,7 +27,7 @@ const GoldenPage = (props) => {
         ogTitle='2025第36屆金曲獎直播＆得獎名單｜紅毯星光大道一次看'
         ogImage={ogImage}
       />
-      <Header menu={menu} />
+      <Header menu={menu} pageName={pageName} />
       <main className={cx("homePage")}>
 
         <div className={cx("kvBox")}>
@@ -410,7 +411,7 @@ const GoldenPage = (props) => {
 export default GoldenPage;
 
 export async function getServerSideProps({ params, req }) {
-console.log(params.goldenPage);
+
   const menuUrl = new URL('/api/menu', process.env.NEXT_PUBLIC_APP_URL)
   const menuRes = await fetch(menuUrl)
   const menu = await menuRes.json()

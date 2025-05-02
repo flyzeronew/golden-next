@@ -2,33 +2,33 @@ import { usePathname } from 'next/navigation'
 import CustomHead from '../../components/CustomHead'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
-import styles from './winners.module.scss'
+import styles from './highlights.module.scss'
 import classNames from 'classnames/bind'
 
 
-const  Winners = (props) => {
+const  Highlights = (props) => {
   const cx = classNames.bind(styles);
   const appUrl = process.env.NEXT_PUBLIC_APP_URL;
   const menu = props.menu;  
   const pathname = usePathname();
   const url = `${appUrl}${pathname}`;
-  const pageName = 'winners';
+  const pageName = 'highlights';
 
   const ogImage = `${appUrl}/golden/images/og-img.jpg`;
 
   return (
     <div className="container" >
       <CustomHead 
-        title='2025金曲獎得獎名單｜第36屆金曲獎入圍歌手與獲獎作品一次看'
-        description='金曲獎得獎名單,金曲獎得主,金曲獎女歌手,金曲獎男歌手,2025金曲獎得獎名單,第36屆金曲獎得獎名單,金曲獎入圍名單,2025金曲獎入圍名單,第36屆金曲獎入圍名單'
-        keywords='2025第36屆金曲獎入圍暨得獎名單出爐！金曲獎最佳男歌手、女歌手、年度歌曲、專輯、最佳新人等所有獲獎名單一次完整整理。'
+        title='2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看'
+        description='金曲獎表演,金曲獎主持人,金曲獎焦點,金曲獎新聞,金曲獎紅毯,金曲獎星光大道,2025金曲獎頒獎典禮,2025金曲獎,第36屆金曲獎'
+        keywords='2025金曲獎新聞不漏接！《TVBS新聞網》專訪入圍歌手，看主持人精彩橋段、頒獎典禮表演、紅毯亮點、得獎感言與話題事件，第36屆金曲獎即時更新新聞一次掌握！'
         url={url}
-        ogTitle='2025金曲獎得獎名單｜第36屆金曲獎入圍歌手與獲獎作品一次看'
+        ogTitle='2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看'
         ogImage={ogImage}
       />
       <Header menu={menu} pageName={pageName} />
 
-      <main className={cx("winnersPage")}>
+      <main className={cx("highlightsPage")}>
         
       </main>
 
@@ -36,11 +36,10 @@ const  Winners = (props) => {
     </div>
   );
 }
-export default Winners;
+export default Highlights;
 
 
 export async function getServerSideProps({ params, req }) {
-
     const menuUrl = new URL('/api/menu', process.env.NEXT_PUBLIC_APP_URL)
     const menuRes = await fetch(menuUrl)
     const menu = await menuRes.json()

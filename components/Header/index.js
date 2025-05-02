@@ -7,8 +7,8 @@ const cx = classnames.bind(styles);
 const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 
 const Header = (props) => {
+    const pageName = props.pageName;
     const menu = props.menu;
-    console.log(menu);
     const [isScrolled, setIsScrolled] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
@@ -31,21 +31,13 @@ const Header = (props) => {
                     </div>
                     <div className={cx("list")}>
                         <ul>
-                            <li>
-                                <a href={`${appUrl}/goldenmusic2025`} className={cx("act")}>
-                                    金曲36
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#'>
-                                    獎項名單
-                                </a>
-                            </li>
-                            <li>
-                                <a href='#'>
-                                    金曲焦點
-                                </a>
-                            </li>
+                            {menu?.map((item, index) => (
+                                <li key={index}>
+                                    <a href={`${item.url}`} className={cx(item.name === pageName ? 'act' : '')}>
+                                        {item.title}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </nav>
