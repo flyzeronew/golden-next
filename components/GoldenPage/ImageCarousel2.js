@@ -201,10 +201,12 @@ function ImageCarousel2(props) {
                         >
                             <div className={cx("picBox")} >
                                 <div className={cx("imgBox")}>
-                                    <div className={cx("bg")} style={{ 
-                                        background: `url(${appUrl}/golden/images/carousel-img2.jpg) no-repeat center center`,
-                                        backgroundSize:'100% 100%',
-                                    }}></div>
+                                    <LazyLoad offset={100}>
+                                        <div className={cx("bg")} style={{ 
+                                            background: `url(${appUrl}/golden/images/carousel-img2.jpg) no-repeat center center`,
+                                            backgroundSize:'100% 100%',
+                                        }}></div>
+                                    </LazyLoad>
                                     <div className={cx("img")}>
                                         <LazyLoad offset={100} once>
                                             <img 
@@ -238,10 +240,12 @@ function ImageCarousel2(props) {
 
                             <div className={cx("picBox")}>
                                 <div className={cx("imgBox")}>
+                                    <LazyLoad offset={100}>
                                     <div className={cx("bg")} style={{ 
                                         background: `url(${appUrl}/golden/images/esg01.jpg) no-repeat center center`,
                                         backgroundSize:'100% 100%',
                                     }}></div>
+                                    </LazyLoad>
                                     <div className={cx("img")}>
                                         <LazyLoad offset={100} once>
                                             <img 
@@ -275,10 +279,12 @@ function ImageCarousel2(props) {
 
                             <div className={cx("picBox")}>
                                 <div className={cx("imgBox")}>
-                                    <div className={cx("bg")} style={{ 
-                                        background: `url(${appUrl}/golden/images/carousel-img4.jpg) no-repeat center center`,
-                                        backgroundSize:'100% 100%',
-                                    }}></div>
+                                    <LazyLoad offset={100}>
+                                        <div className={cx("bg")} style={{ 
+                                            background: `url(${appUrl}/golden/images/carousel-img4.jpg) no-repeat center center`,
+                                            backgroundSize:'100% 100%',
+                                        }}></div>
+                                    </LazyLoad>
                                     <div className={cx("img")}>
                                         <LazyLoad offset={100} once>
                                             <img 
@@ -315,10 +321,12 @@ function ImageCarousel2(props) {
 
                             <div className={cx("picBox")}>
                                 <div className={cx("imgBox")}>
-                                    <div className={cx("bg")} style={{ 
-                                        background: `url(${appUrl}/golden/images/esg02.jpg) no-repeat center center`,
-                                        backgroundSize:'100% 100%',
-                                    }}></div>
+                                    <LazyLoad offset={100} once>
+                                        <div className={cx("bg")} style={{ 
+                                            background: `url(${appUrl}/golden/images/esg02.jpg) no-repeat center center`,
+                                            backgroundSize:'100% 100%',
+                                        }}></div>
+                                    </LazyLoad>
                                     <div className={cx("img")}>
                                         <LazyLoad offset={100} once>
                                             <img 
