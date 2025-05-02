@@ -9,12 +9,12 @@ const cx = classnames.bind(styles);
 const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 
 function ImageCarousel2(props) {
+
+    const imgRefs = useRef([]);
+    const [imgSize, setImgSize] = useState([]);
+
     const [lightBoxShow, setLightBoxShow] = useState(false);
     const lightboxSliderRef = useRef(null);
-    const [imageSize, setImageSize] = useState({});
-
-    const [imageWidth, setImageWidth] = useState(0);
-    const [imageHeight, setImageHeight] = useState(0);
 
     function lightBoxShowClick() {
         setLightBoxShow(true);
@@ -26,21 +26,17 @@ function ImageCarousel2(props) {
         lightboxSliderRef.current?.slickGoTo(0); 
     }
 
-    function handleImageLoad(event) {
-        console.log(event);
-        const img = event.target;
-        setImageSize({
-            width: img.naturalWidth,
-            height: img.naturalHeight,
-        });
-
-    };
-
     useEffect(() => {
-        
+        if (imgRefs.current.length > 0) {
+            const result = imgRefs.current.map((img) => {
+                if (img) return img.width > img.height;
+                return false;
+            });
+            setImgSize(result);
+        }
     }, []);
-console.log(imageWidth);
-    
+
+
     const title = props.title || '';
     const data = props.data || '';
 
@@ -76,6 +72,7 @@ console.log(imageWidth);
 
     return (
         <>
+
             <div className={cx("imageCarousel2")}>
                 <div className={cx("frameBox")}>
                     <div className={cx("carousel")}>
@@ -89,13 +86,7 @@ console.log(imageWidth);
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264}
-                                        onLoad={(e) => {
-                                            setImageWidth(e.target.naturalWidth);
-                                            setImageHeigh(e.target.naturalWidth);
-                                        }}
-                                    
-                                    />
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>1.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -202,7 +193,16 @@ console.log(imageWidth);
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="img" width={1920} height={1080} />
+                                        <img 
+                                            ref={el => imgRefs.current[0] = el} 
+                                            src={`${appUrl}/golden/images/carousel-img2.jpg`} 
+                                            alt="img" 
+                                            style={
+                                                imgSize[0] ? 
+                                                { width: `100%`, height:'auto',} :  
+                                                { width: `auto`, height:'100%',}
+                                            }
+                                        />
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
@@ -228,7 +228,16 @@ console.log(imageWidth);
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img src={`${appUrl}/golden/images/esg01.jpg`} alt="img" width={1920} height={1080} />
+                                        <img 
+                                            ref={el => imgRefs.current[1] = el}
+                                            src={`${appUrl}/golden/images/esg01.jpg`} 
+                                            alt="img" 
+                                            style={
+                                                imgSize[1] ? 
+                                                { width: `100%`, height:'auto',} :  
+                                                { width: `auto`, height:'100%',}
+                                            }
+                                        />
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
@@ -250,11 +259,20 @@ console.log(imageWidth);
                             <div className={cx("picBox")}>
                                 <div className={cx("imgBox")}>
                                     <div className={cx("bg")} style={{ 
-                                        background: `url(${appUrl}/golden/images/carousel-img.jpg) no-repeat center center`,
+                                        background: `url(${appUrl}/golden/images/carousel-img4.jpg) no-repeat center center`,
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={1920} height={1080} />
+                                        <img 
+                                            ref={el => imgRefs.current[2] = el}
+                                            src={`${appUrl}/golden/images/carousel-img4.jpg`} 
+                                            alt="img" 
+                                            style={
+                                                imgSize[2] ?  
+                                                { width: `100%`, height:'auto',} :  
+                                                { width: `auto`, height:'100%',}
+                                            }
+                                        />
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
@@ -267,6 +285,42 @@ console.log(imageWidth);
                                     <div className={cx("txt")}>
                                         入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
                                         入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                                        入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
+                                    </div>
+                                    <div className={cx("time")}>
+                                        2024.06.30
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div className={cx("picBox")}>
+                                <div className={cx("imgBox")}>
+                                    <div className={cx("bg")} style={{ 
+                                        background: `url(${appUrl}/golden/images/esg02.jpg) no-repeat center center`,
+                                        backgroundSize:'100% 100%',
+                                    }}></div>
+                                    <div className={cx("img")}>
+                                        <img 
+                                            ref={el => imgRefs.current[3] = el}
+                                            src={`${appUrl}/golden/images/esg02.jpg`} 
+                                            alt="img" 
+                                            style={
+                                                imgSize[3] ? 
+                                                { width: `100%`, height:'auto',} :  
+                                                { width: `auto`, height:'100%',}
+                                            }
+                                        />
+                                    </div>
+                                </div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("nameBox")}>
+                                        <div className={cx("name")}>女星紅毯</div>
+                                        <div className={cx("page")}>
+                                            第 <span>4</span>/<span>4</span> 筆 
+                                        </div>
+                                    </div>
+                                    <div className={cx("txt")}>
                                         入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。入圍本屆本屆最佳華語女歌手獎的孫盛希，一襲黑色削肩禮服搭配Boucheron珠寶性感現身。
                                     </div>
                                     <div className={cx("time")}>
