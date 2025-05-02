@@ -1,4 +1,3 @@
-import LazyLoad from 'react-lazyload'
 import styles from './ImageCarousel2.module.scss'
 import classnames from "classnames/bind"
 import Slider from "react-slick"
@@ -87,9 +86,7 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>1.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -104,9 +101,7 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>2.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -121,9 +116,7 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>3.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -138,9 +131,7 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>4.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -155,9 +146,7 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>5.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -172,9 +161,7 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <LazyLoad offset={100} height={264} once>
-                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
-                                    </LazyLoad>
+                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>6.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
