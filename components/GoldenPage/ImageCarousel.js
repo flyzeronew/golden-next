@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import LazyLoad from 'react-lazyload'
 import styles from './ImageCarousel.module.scss';
 import classnames from "classnames/bind";
 import Slider from "react-slick"
@@ -38,8 +39,10 @@ function ImageCarousel(props) {
                     
                         <div className={cx("box")}>
                             <a href="#">
-                                <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                <div className={cx("img")}>                                    
+                                    <LazyLoad height={264} offset={100} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={330} height={264} />
+                                    </LazyLoad>
                                 </div>
                                 <div className={cx("txt")}>草東沒有派對</div>
                                 <div className={cx("shortlisted")}>1項入圍</div>                            
@@ -48,7 +51,9 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad height={264} offset={100} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={330} height={264} />
+                                    </LazyLoad>
                                 </div>
                                 <div className={cx("txt")}>草東沒有派對</div>
                                 <div className={cx("shortlisted")}>1項入圍</div>                            
@@ -57,7 +62,9 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad height={264} offset={100} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={330} height={264} />
+                                    </LazyLoad>
                                 </div>
                                 <div className={cx("txt")}>草東沒有派對</div>
                                 <div className={cx("shortlisted")}>1項入圍</div>                            
@@ -66,7 +73,9 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad height={264} offset={100} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={330} height={264} />
+                                    </LazyLoad>
                                 </div>
                                 <div className={cx("txt")}>草東沒有派對</div>
                                 <div className={cx("shortlisted")}>1項入圍</div>                            
@@ -75,7 +84,9 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad height={264} offset={100} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={330} height={264} />
+                                    </LazyLoad>
                                 </div>
                                 <div className={cx("txt")}>草東沒有派對</div>
                                 <div className={cx("shortlisted")}>1項入圍</div>                            
@@ -84,7 +95,9 @@ function ImageCarousel(props) {
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad height={264} offset={100} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="img" width={330} height={264} />
+                                    </LazyLoad>
                                 </div>
                                 <div className={cx("txt")}>草東沒有派對</div>
                                 <div className={cx("shortlisted")}>1項入圍</div>                            

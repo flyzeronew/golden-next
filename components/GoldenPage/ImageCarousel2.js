@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload'
 import styles from './ImageCarousel2.module.scss'
 import classnames from "classnames/bind"
 import Slider from "react-slick"
@@ -86,7 +87,9 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad offset={100} height={264} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    </LazyLoad>
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>1.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -101,7 +104,9 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad offset={100} height={264} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    </LazyLoad>
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>2.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -116,7 +121,9 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad offset={100} height={264} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    </LazyLoad>
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>3.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -131,7 +138,9 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad offset={100} height={264} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    </LazyLoad>
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>4.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -146,7 +155,9 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad offset={100} height={264} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    </LazyLoad>
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>5.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -161,7 +172,9 @@ function ImageCarousel2(props) {
                                 }}
                             >
                                 <div className={cx("img")}>
-                                    <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    <LazyLoad offset={100} height={264} once>
+                                        <img src={`${appUrl}/golden/images/carousel-img2.jpg`} alt="logo" width={330} height={264} />
+                                    </LazyLoad>
                                     <div className={cx("txtBox")}>
                                         <div className={cx("name")}>圖輯名稱</div>
                                         <div className={cx("txt")}>6.圖輯文字圖輯文字圖輯文字圖輯文字圖輯文字</div> 
@@ -193,16 +206,18 @@ function ImageCarousel2(props) {
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img 
-                                            ref={el => imgRefs.current[0] = el} 
-                                            src={`${appUrl}/golden/images/carousel-img2.jpg`} 
-                                            alt="img" 
-                                            style={
-                                                imgSize[0] ? 
-                                                { width: `100%`, height:'auto',} :  
-                                                { width: `auto`, height:'100%',}
-                                            }
-                                        />
+                                        <LazyLoad offset={100} once>
+                                            <img 
+                                                ref={el => imgRefs.current[0] = el} 
+                                                src={`${appUrl}/golden/images/carousel-img2.jpg`}
+                                                alt="img" 
+                                                style={
+                                                    imgSize[0] ? 
+                                                    { width: `100%`, height:'auto',} :  
+                                                    { width: `auto`, height:'100%',}
+                                                }
+                                            />
+                                        </LazyLoad>
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
@@ -228,16 +243,18 @@ function ImageCarousel2(props) {
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img 
-                                            ref={el => imgRefs.current[1] = el}
-                                            src={`${appUrl}/golden/images/esg01.jpg`} 
-                                            alt="img" 
-                                            style={
-                                                imgSize[1] ? 
-                                                { width: `100%`, height:'auto',} :  
-                                                { width: `auto`, height:'100%',}
-                                            }
-                                        />
+                                        <LazyLoad offset={100} once>
+                                            <img 
+                                                ref={el => imgRefs.current[0] = el} 
+                                                src={`${appUrl}/golden/images/esg01.jpg`}
+                                                alt="img" 
+                                                style={
+                                                    imgSize[0] ? 
+                                                    { width: `100%`, height:'auto',} :  
+                                                    { width: `auto`, height:'100%',}
+                                                }
+                                            />
+                                        </LazyLoad>
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
@@ -263,16 +280,18 @@ function ImageCarousel2(props) {
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img 
-                                            ref={el => imgRefs.current[2] = el}
-                                            src={`${appUrl}/golden/images/carousel-img4.jpg`} 
-                                            alt="img" 
-                                            style={
-                                                imgSize[2] ?  
-                                                { width: `100%`, height:'auto',} :  
-                                                { width: `auto`, height:'100%',}
-                                            }
-                                        />
+                                        <LazyLoad offset={100} once>
+                                            <img 
+                                                ref={el => imgRefs.current[0] = el} 
+                                                src={`${appUrl}/golden/images/carousel-img4.jpg`}
+                                                alt="img" 
+                                                style={
+                                                    imgSize[0] ? 
+                                                    { width: `100%`, height:'auto',} :  
+                                                    { width: `auto`, height:'100%',}
+                                                }
+                                            />
+                                        </LazyLoad>
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
@@ -301,16 +320,18 @@ function ImageCarousel2(props) {
                                         backgroundSize:'100% 100%',
                                     }}></div>
                                     <div className={cx("img")}>
-                                        <img 
-                                            ref={el => imgRefs.current[3] = el}
-                                            src={`${appUrl}/golden/images/esg02.jpg`} 
-                                            alt="img" 
-                                            style={
-                                                imgSize[3] ? 
-                                                { width: `100%`, height:'auto',} :  
-                                                { width: `auto`, height:'100%',}
-                                            }
-                                        />
+                                        <LazyLoad offset={100} once>
+                                            <img 
+                                                ref={el => imgRefs.current[0] = el} 
+                                                src={`${appUrl}/golden/images/esg02.jpg`}
+                                                alt="img" 
+                                                style={
+                                                    imgSize[0] ? 
+                                                    { width: `100%`, height:'auto',} :  
+                                                    { width: `auto`, height:'100%',}
+                                                }
+                                            />
+                                        </LazyLoad>
                                     </div>
                                 </div>
                                 <div className={cx("txtBox")}>
