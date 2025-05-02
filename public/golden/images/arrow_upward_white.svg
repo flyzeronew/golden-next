@@ -1,3 +1,27 @@
-<svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.19302e-05 5.0918L8.08465 5.0918L4.28722 1.29435L5.00002 0.591797L10 5.59178L5.00002 10.5918L4.28722 9.88921L8.08465 6.09176L3.18865e-05 6.09176L3.19302e-05 5.0918Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_1" data-name="圖層_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+  <!-- Generator: Adobe Illustrator 29.3.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 151)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st1 {
+        mask: url(#mask);
+      }
+
+      .st2 {
+        fill: #d9d9d9;
+      }
+    </style>
+    <mask id="mask" x=".5" y=".6" width="16" height="16" maskUnits="userSpaceOnUse">
+      <g id="mask0_575_6816">
+        <rect class="st2" x=".5" y=".6" width="16" height="16"/>
+      </g>
+    </mask>
+  </defs>
+  <g class="st1">
+    <path class="st0" d="M3.5,8.1h8.1l-3.8-3.8.7-.7,5,5-5,5-.7-.7,3.8-3.8H3.5v-1Z"/>
+  </g>
 </svg>

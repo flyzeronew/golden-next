@@ -218,7 +218,13 @@
     border-right: 1px rgba(0,0,0,0.1) solid;
     padding-right: 15px;
 }
-.focusBox .list ul li:last-child{
+.focusBox.dark .list ul li{
+    border-right: 1px rgba(255,255,255,0.1) solid;
+    padding-right: 15px;
+}
+.focusBox .list ul li:last-child,
+.focusBox.dark .list ul li:last-child
+{
     border-right: 0px;
     padding-right: 0;
 }
