@@ -5,13 +5,11 @@
     z-index: 10;
     display: flex;
     justify-content: center;
-    transition: 0.2s;
 }
 .menu.act{
     background-color: #fff;
     color: #bbbabf;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: 0.2s;
 }
 .menu.act .list li a{
     color: #bbbabf;
