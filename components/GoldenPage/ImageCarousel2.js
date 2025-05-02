@@ -208,6 +208,8 @@ function ImageCarousel2(props) {
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
+                                            width={900}
+                                            height={506}
                                         />
                                     </div>
                                 </div>
@@ -243,6 +245,8 @@ function ImageCarousel2(props) {
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
+                                            width={900}
+                                            height={506}
                                         />
                                     </div>
                                 </div>
@@ -278,6 +282,8 @@ function ImageCarousel2(props) {
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
+                                            width={900}
+                                            height={506}
                                         />
                                     </div>
                                 </div>
@@ -316,6 +322,8 @@ function ImageCarousel2(props) {
                                                 { width: `100%`, height:'auto',} :  
                                                 { width: `auto`, height:'100%',}
                                             }
+                                            width={900}
+                                            height={506}
                                         />
                                     </div>
                                 </div>
