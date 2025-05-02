@@ -2,24 +2,16 @@ export default function handler(req, res) {
     // const appUrl = process.env.APP_URL;
     const data = [ 
             {
-                'title':'首頁',
-                'url':'/',
+                'title':'金曲36',
+                'name':'goldenmusic2025',
             },
             {
-                'title':'即時',
-                'url':'/',
+                'title':'獎項名單',
+                'name':'winners',
             },
             {
-                'title':'生活',
-                'url':'/',
-            },
-            {
-                'title':'政治',
-                'url':'/',
-            },
-            {
-                'title':'娛樂',
-                'url':'/',
+                'title':'金曲焦點',
+                'name':'highlights',
             },
     ];
     res.status(200).json(data);

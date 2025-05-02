@@ -141,7 +141,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 .imageLightBox .title{
     font-size: 22px;
@@ -150,7 +150,7 @@
     width: 100%;
     overflow: hidden;
     aspect-ratio: 16/9;
-    background-color: rgba(255,255,255,0.4);
+    background-color:#000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +160,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    filter: blur(10px); 
+    opacity: 0.5;
+    filter: blur(30px);
 }
 .imageLightBox .img{
     position: absolute;
@@ -169,7 +170,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
 }
 .imageLightBox .imgBox .img img{
     width: auto;
@@ -239,9 +240,9 @@
 .imageLightBox :global(button.slick-prev),
 .imageLightBox :global(button.slick-next)
 {
-    top:45%;
-    width: 40px;
-    height: 40px;
+    top:38.5%;
+    width: 48px;
+    height: 48px;
 }
 .imageLightBox :global(button.slick-prev:before), 
 .imageLightBox :global(button.slick-next:before)
@@ -254,16 +255,18 @@
     position:unset;
 }
 .imageLightBox :global(button.slick-prev){
-    left: 0;
+    left: 0;    
     background: url(/golden/images/carousel-arraw-l3.svg) no-repeat center center;
     background-size: 100%;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 .imageLightBox :global(button.slick-next){
     right: 0;
     background: url(/golden/images/carousel-arraw-r3.svg) no-repeat center center;
     background-size: 100%;
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 @media (max-width:767px) {
     .imageLightBox .imgBox{
@@ -272,9 +275,6 @@
     }
     .imageLightBox .box .xx{
         width: 24px;
-    }
-    .imageLightBox .titleBox{
-        padding:0 15px;
     }
     .imageLightBox .box{
         padding:100px 0 0;
@@ -286,7 +286,16 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 10px;
+        padding:0 15px;
+        margin-bottom: 24px;
     }
 }
+@media (max-width:413px) {
+    .imageLightBox :global(button.slick-prev),
+    .imageLightBox :global(button.slick-next)
+    {
+        top:37%;
+    }
+}
+
 // 彈出燈箱 ed

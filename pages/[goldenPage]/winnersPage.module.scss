@@ -212,15 +212,7 @@
 }
 .focusBox .list ul{
     display: flex;
-    column-gap: 15px;
-}
-.focusBox .list ul li{
-    border-right: 1px rgba(0,0,0,0.1) solid;
-    padding-right: 15px;
-}
-.focusBox .list ul li:last-child{
-    border-right: 0px;
-    padding-right: 0;
+    column-gap: 30px;
 }
 .focusBox .list .img{
     margin-bottom: 15px;
@@ -249,7 +241,7 @@
         -webkit-line-clamp: 3;
     }
     .focusBox .firstNews{
-        margin-bottom: 48px;
+        margin-bottom: 24px;
     }
     .focusBox .firstNews a{
         display: block;
@@ -261,13 +253,15 @@
     .focusBox .firstNews .txtBox{
         width: 100%;
     }
+    .focusBox .list {
+        margin-bottom: 24px;
+    }
     .focusBox .list ul{
         display: block;
     }
     .focusBox .list ul li{
         margin-bottom: 24px;
         padding-bottom: 24px;
-        border-right: 0px rgba(0,0,0,0.1) solid;
         border-bottom: 1px solid rgba(0,0,0,0.1);
     }
     .focusBox .list ul li:last-child{
