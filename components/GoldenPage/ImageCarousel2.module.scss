@@ -130,11 +130,16 @@
     backdrop-filter: blur(10px);
     top:0;
     z-index: 3;
-    display: none;
     overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 .imageLightBox.show{
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 .imageLightBox .box{
     max-width: 1280px;

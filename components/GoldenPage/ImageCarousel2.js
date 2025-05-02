@@ -16,7 +16,7 @@ function ImageCarousel2(props) {
     const [lightBoxShow, setLightBoxShow] = useState(false);
     const lightboxSliderRef = useRef(null);
 
-    function lightBoxShowClick() {
+    function lightBoxShowClick() {        
         setLightBoxShow(true);
     }    
     function lightBoxHideClick() {
