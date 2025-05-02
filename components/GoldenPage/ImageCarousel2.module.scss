@@ -15,6 +15,7 @@
 }
 .imageCarousel2 .box{
     padding: 8px;
+    cursor: pointer;
 }
 .imageCarousel2 .box a{
     position: relative;
@@ -120,7 +121,7 @@
     margin: 0 auto;
 }
 .picList .picBox{
-    width: 100%;
+    width: 100%;    
 }
 .imageLightBox{
     position: fixed;
