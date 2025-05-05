@@ -1,6 +1,6 @@
 import styles from './Header.module.scss'
 import classnames from 'classnames/bind'
-import React, { useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 
 const cx = classnames.bind(styles);
@@ -20,13 +20,14 @@ const Header = (props) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     return (
         <header>
             <div className={cx("menu" , isScrolled ? 'act' : '' )}>
                 <nav>
                     <div className={cx("logo")}>
                         <a href='https://news.tvbs.com.tw/' target='_blank' >
-                            <img src={`${appUrl}/golden/images/${isScrolled ? 'logo_tvbs_color.svg' : 'logo_tvbs.svg'}`} alt="logo" width={80} height={42} />
+                            <img src={`${appUrl}/golden/images/${isScrolled ? 'logo_tvbs_color.webp' : 'logo_tvbs.webp'}`} alt="logo" width={80} height={42} />
                         </a>
                     </div>
                     <div className={cx("list")}>

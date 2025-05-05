@@ -1,4 +1,5 @@
 import { usePathname } from 'next/navigation'
+import LazyLoad from 'react-lazyload'
 import CustomHead from '../../components/CustomHead'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -29,7 +30,167 @@ const  Winners = (props) => {
       <Header menu={menu} pageName={pageName} />
 
       <main className={cx("winnersPage")}>
-        
+        <article>
+          <section>
+            <div className={cx("awardsBox")}>
+              <div className={cx("frameBox")}>
+
+                <div className={cx("firstBox")}>
+                  <div className={cx("award")}>第36屆金曲獎</div>
+                  <div className={cx("titleBox")}>
+                    <div className={cx("title")}>最佳華語專輯獎</div>
+                    <div className={cx("menuBox")}>
+                      <div className={cx("box")}>
+                        <div className={cx("txt")}>全部<span>獎項</span></div>
+                        <div className={cx("arraw")}>                        
+                          <img src={`${appUrl}/golden/images/menu-arraw.svg`} alt="arraw" width={24} height={24} />
+                        </div>
+                      </div>
+                      <div className={cx("menu")}>
+                        <div className={cx("xx")}></div>
+                        <ul>
+                          <li></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className={cx("list")}>
+                  <ul>
+
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("title")}>最佳華語專輯獎</div>
+                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
+                        </div>
+                        
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("title")}>最佳華語專輯獎</div>
+                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
+                        </div>
+                        
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad>                            
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("title")}>最佳華語專輯獎</div>
+                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
+                        </div>
+                        
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("title")}>最佳華語專輯獎</div>
+                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
+                        </div>
+                        
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={160} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("title")}>最佳華語專輯獎</div>
+                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
+                        </div>
+                        
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+                <div className={cx("moreBox")}>
+                  <a href='#'>
+                    <span>查看其他獎項</span>
+                    <img src={`${appUrl}/golden/images/arrow_upward.svg`} alt="logo" width={16} height={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </article>
       </main>
 
       <Footer />

@@ -5,6 +5,11 @@
     padding:50px 0;
     background-color: #141324;
 }
+.footer.fixed{
+    width: 100%;
+    position:fixed;
+    bottom:0;
+}
 .footer .logoBox{
     display: flex;
     align-items: center;

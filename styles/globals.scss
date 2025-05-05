@@ -96,6 +96,17 @@ img{
   border: 1px solid #ffffff;
 }
 
+// 文章區塊
+article section{
+  padding: 48px 0;
+}
+
+@media (max-width:1023px) {
+  article section{
+      padding: 48px 0;
+  }
+}
+// 文章區塊 ed
 
 .bgColor01{
   background-color: #fff;
@@ -122,3 +133,5 @@ img{
   aspect-ratio: 1/1;
   background: url(/golden/images/play-icon.png) no-repeat center center;
 }
+
+

@@ -30,7 +30,7 @@ const GoldenPage = (props) => {
       />
       <Header menu={menu} pageName={pageName} />
       <main className={cx("homePage")}>
-
+        <div className={cx("menuHeight")}></div>
         <div className={cx("kvBox")}>
           <div className={cx("frameBox")}>
             <div className={cx("head")}></div>
@@ -46,7 +46,7 @@ const GoldenPage = (props) => {
           </div>
         </div>
 
-        <article>          
+        <article>
           <section className={cx("bgColor01")}>
             <div className={cx("awardsBox")}>
               <div className={cx("frameBox")}>

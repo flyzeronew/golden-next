@@ -1,16 +1,31 @@
+import React, { useState, useEffect } from 'react';
 import styles from './Footer.module.scss';
 import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 
 const Footer = () => {
+    const [isFixed, setIsFixed] = useState(false);
+    useEffect(() => {
+        const handleResize = () => {
+            const wrapper = document.querySelector('.container');
+            const wrapperHeight = wrapper.offsetHeight;
+            const windowHeight = window.innerHeight;
+            setIsFixed(wrapperHeight < windowHeight);
+        };
+        handleResize(); 
+            window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
-        <footer className={cx("footer")}>
+        <footer className={cx("footer",isFixed ? 'fixed' : '')}>
             <div className={cx("frameBox")}>
                 <div className={cx("logoBox")}>
                     <div className={cx("logo")}>
                         <a href='https://news.tvbs.com.tw/' target='_blank' >
-                            <img src={`${appUrl}/golden/images/logo_tvbs.svg`} alt="logo" width={80} height={42} />
+                            <img src={`${appUrl}/golden/images/logo_tvbs.webp`} alt="logo" width={80} height={42} />
                         </a>
                     </div>
                     <div className={cx("community")}>

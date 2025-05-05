@@ -1,0 +1,156 @@
+.winnersPage{
+    width: 100%;
+    display: block;
+    background: linear-gradient(to bottom,  #a6a6cb 0%,#ffffff 30%);
+    overflow: hidden;
+}
+
+// 獎項區塊
+
+// 第一篇文章
+.awardsBox .firstBox{
+
+}
+.awardsBox .firstBox .award{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.awardsBox .firstBox .titleBox{
+    padding-bottom: 15px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #0F0E1B;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.awardsBox .firstBox .titleBox .title{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 36px;
+}
+.awardsBox .firstBox .menuBox{
+
+}
+.awardsBox .firstBox .menuBox .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.awardsBox .firstBox .menuBox .txt{
+    font-weight: 500;
+    font-size: 13px;
+    color: #0F0E1B;
+}
+.awardsBox .firstBox .menuBox .arraw{
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+}
+.awardsBox .firstBox .menuBox .list{
+
+}
+.awardsBox .firstBox .imgBox{
+
+}
+@media (max-width:1023px) {
+    .awardsBox .firstBox .titleBox .title{
+        font-size: 32px;
+    }
+    .awardsBox .firstBox .menuBox .txt span{
+        display: none;
+    }
+}
+// 第一篇文章ed
+
+.awardsBox .list{
+    margin-bottom: 30px;
+}
+.awardsBox .list li{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom:1px solid #EFEBE6;
+}
+.awardsBox .list li:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    border-bottom: 0px;
+}
+.awardsBox .list li a{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.awardsBox .imgBox{
+    width: 20%;
+}
+.awardsBox .txtBox{
+    width: 75%;
+}
+.awardsBox .imgBox .img{
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1/1; 
+    line-height: 0;   
+}
+.awardsBox .title{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;    
+}
+.awardsBox .txt{
+    font-weight: 500;
+    font-size: 13px;
+    color: #8B8182;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.awardsBox .arraw{
+    width: 16px;
+    height: 16px;
+    aspect-ratio: 1/1; 
+    line-height: 0;
+}
+@media (max-width:1023px) {
+    .awardsBox .list li{
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-bottom:1px solid #EFEBE6;
+    }
+    .awardsBox .list{
+        margin-bottom: 24px;
+    }
+    .awardsBox .list li a{
+        column-gap: 15px;
+    }    
+    .awardsBox .title{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .awardsBox .txt{
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+    }
+}
+@media (max-width:450px) {
+    .awardsBox .imgBox{
+        width: 30%;
+    }
+    .awardsBox .txtBox{
+        width: 65%;
+    }
+}
+@media (max-width:359px) {
+    .awardsBox .title{
+        font-size: 20px;
+    }
+}
+
+// 獎項區塊 ed
