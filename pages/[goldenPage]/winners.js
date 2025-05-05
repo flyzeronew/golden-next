@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import LazyLoad from 'react-lazyload'
 import CustomHead from '../../components/CustomHead'
@@ -6,7 +6,6 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import styles from './winners.module.scss'
 import classNames from 'classnames/bind'
-
 
 const  Winners = (props) => {
   const [menuShow, setMenuShow] = useState(false);
@@ -16,17 +15,16 @@ const  Winners = (props) => {
   const pathname = usePathname();
   const url = `${appUrl}${pathname}`;
   const pageName = 'winners';
+  const ogImage = `${appUrl}/golden/images/og-img.jpg`;
 
   function menuShowClick() {
-    setMenuShow(true);
+    setMenuShow(true);    
     document.documentElement.style.overflowY = 'hidden';
   }
   function menuHideClick() {
     setMenuShow(false);
     document.documentElement.style.overflowY = 'auto';
   }
-
-  const ogImage = `${appUrl}/golden/images/og-img.jpg`;
 
   return (
     <div className="container" >
@@ -187,7 +185,10 @@ const  Winners = (props) => {
                       </div>
                     </div>
                     
-                    <div className={cx("menuMask" ,true === menuShow ? 'show' : '')}></div>
+                    <div 
+                      className={cx("menuMask" ,true === menuShow ? 'show' : '')}
+                      onClick={menuHideClick}
+                    ></div>
                   </div>
 
                   <div className={cx("imgBox")}>
