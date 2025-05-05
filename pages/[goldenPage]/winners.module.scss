@@ -1,7 +1,7 @@
 .winnersPage{
     width: 100%;
     display: block;
-    background: linear-gradient(to bottom,  #a6a6cb 0%,#ffffff 30%);
+    background: linear-gradient(to bottom,  #a6a6cb 0%,#ffffff 20%);
     overflow: hidden;
     padding-top: 64px;
 }
@@ -24,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .awardsBox .firstNews .titleBox .title{
     margin-bottom: 0;
@@ -47,6 +48,12 @@
     width: 24px;
     height: 24px;
     aspect-ratio: 1/1;
+    transition: .3s;
+    transform: rotate(0deg);
+}
+.awardsBox .firstNews .menuBox .arraw.act{
+    transform: rotate(180deg);
+    transition: .3s;
 }
 .awardsBox .firstNews .imgBox{
     position: relative;
@@ -108,6 +115,121 @@
 }
 // 第一篇文章ed
 
+
+// 得獎彈出名單
+.awardsBox .menuLigthBox{
+    position: absolute;
+    top:50px;
+    left:0;    
+    width: 100%;
+    display: none;
+}
+.awardsBox .menuLigthBox.show{
+    display: block;
+}
+.awardsBox .menuLigthBox .fixed{
+    position: fixed;
+    left:0;    
+    width: 100%;
+    z-index: 12;
+}
+.awardsBox .menuLigthBox .xxBox{
+    max-width: 900px;  
+    overflow: hidden;
+    margin: 0 auto;
+    padding:20px;
+    background-color: #fff; 
+}
+.awardsBox .menuLigthBox .xx{
+    float: right;
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1/1;
+    cursor: pointer;    
+}
+.awardsBox .menuLigthBox .scrollBox{
+    max-width: 900px;  
+    max-height: 55vh;
+    overflow: hidden;
+    overflow-y: auto;  
+    margin: 0 auto;
+    padding:4px 48px 24px;
+    position: relative;
+    background-color: #fff;
+}
+.awardsBox .menuLigthBox .fixed .xxBox{
+    position: relative;
+}
+.awardsBox .menuLigthBox .fixed .scrollBox::-webkit-scrollbar {
+    width: 2px;
+    background: #ffedd9;
+}
+.awardsBox .menuLigthBox .fixed .scrollBox::-webkit-scrollbar-thumb {
+    background: #98836B;
+}
+.awardsBox .menuLigthBox .box{
+    border-bottom: 1px #EEEEEE solid;
+    margin-bottom: 24px;
+}
+.awardsBox .menuLigthBox .box:last-child{
+    border-bottom: 0px #EEEEEE solid;
+    margin-bottom: 0px;
+}
+.awardsBox .menuLigthBox .box .title{
+    font-weight: 400;
+    font-size: 16px;
+    color: #98836B;
+    margin-bottom: 15px;
+}
+.awardsBox .menuLigthBox .box .list{
+    padding: 0;
+    margin: 0;
+}
+.awardsBox .menuLigthBox .box .list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.awardsBox .menuLigthBox .box .list li{
+    width: calc((100%) / 3);
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-bottom: 24px;
+}
+.awardsBox .menuMask{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 11;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+.awardsBox .menuMask.show{
+    display: block;
+}
+@media (max-width:1023px) {
+    .awardsBox .menuLigthBox .fixed{
+        height: 78vh;
+        background-color: #fff;
+    }
+    .awardsBox .menuLigthBox .fixed .scrollBox{
+        max-height: 63vh;
+        padding:4px 24px;
+    }
+    .awardsBox .menuLigthBox .box .list ul{
+        display: block;
+    }
+    .awardsBox .menuLigthBox .box .list li{
+        width:100%;
+    }
+}
+// 得獎彈出名單 ed
+
+
 .awardsBox .list{
     margin-bottom: 48px;
 }
@@ -116,7 +238,6 @@
     font-size: 16px;
     margin-bottom: 24px;
 }
-
 .awardsBox .list li{
     margin-bottom: 24px;
     padding-bottom: 24px;
@@ -213,7 +334,125 @@
 // 獎項區塊 ed
 
 // 相關閱讀
-.moreReadBox{
-
+.moreReadBox .title{
+    font-weight: 500;
+    font-size: 26px;
+    border-bottom: 1px #000 solid;
+    padding-bottom: 15px;
+    margin-bottom: 24px;
+}
+.moreReadBox .list .img{
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+.moreReadBox .list .time{
+    font-weight: 400;
+    font-size: 13px;
+    color: #98836B;
+    margin-bottom: 15px;
+}
+.moreReadBox .list .txt{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.moreReadBox .list{
+    margin-bottom: 48px;
+}
+.moreReadBox .list ul{
+    display: flex;
+    column-gap: 15px;
+}
+.moreReadBox .list ul li{
+    border-right: 1px rgba(0,0,0,0.1) solid;
+    padding-right: 15px;
+}
+.moreReadBox .list ul li:last-child
+{
+    border-right: 0px;
+    padding-right: 0;
+}
+.moreReadBox .list .img{
+    margin-bottom: 15px;
+}
+.moreReadBox .list .txt{
+    font-size: 22px;
+    -webkit-line-clamp: 3;
+}
+@media (max-width:1023px) {
+    .moreReadBox .time{
+        font-weight: 400;
+        font-size: 13px;
+        color: #98836B;
+        margin-bottom: 5px;
+    }
+    .moreReadBox .firstNews .txt{
+        font-size: 24px;
+        -webkit-line-clamp: 3;
+    }
+    .moreReadBox .list .txt{
+        font-size: 20px;
+        -webkit-line-clamp: 3;
+    }
+    .moreReadBox .firstNews{
+        margin-bottom: 48px;
+    }
+    .moreReadBox .firstNews a{
+        display: block;
+    }
+    .moreReadBox .firstNews .imgBox{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .moreReadBox .firstNews .txtBox{
+        width: 100%;
+    }
+    .moreReadBox .list ul{
+        display: block;
+    }
+    .moreReadBox .list ul li{
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-right: 0px rgba(0,0,0,0.1) solid;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .moreReadBox .list ul li:last-child{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+    }
+    .moreReadBox .list ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .moreReadBox .list .imgBox{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+    .moreReadBox .list .imgBox .img{
+        margin-bottom: 0;
+    }
+    .moreReadBox .list .txtBox{
+        width: 65%;
+    }
+    .moreReadBox .list .img{
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .moreReadBox .list .img img {
+        transform: scale(2);
+        transform-origin: center center;
+    }
 }
 // 相關閱讀ed

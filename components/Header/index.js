@@ -1,7 +1,6 @@
+import React, { useRef, useState, useEffect } from 'react';
 import styles from './Header.module.scss'
 import classnames from 'classnames/bind'
-import React, { useRef, useState, useEffect } from 'react';
-
 
 const cx = classnames.bind(styles);
 const appUrl = process.env.NEXT_PUBLIC_APP_URL;

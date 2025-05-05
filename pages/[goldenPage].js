@@ -369,9 +369,7 @@ const GoldenPage = (props) => {
                               <LazyLoad 
                                 height={359} 
                                 offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
@@ -392,9 +390,7 @@ const GoldenPage = (props) => {
                               <LazyLoad 
                                 height={359} 
                                 offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
@@ -415,9 +411,7 @@ const GoldenPage = (props) => {
                               <LazyLoad 
                                 height={359} 
                                 offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
@@ -438,9 +432,7 @@ const GoldenPage = (props) => {
                               <LazyLoad 
                                 height={359} 
                                 offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
@@ -490,10 +482,7 @@ const GoldenPage = (props) => {
                               </div>                            
                               <LazyLoad 
                                 height={359} 
-                                offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+                                offset={100}
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
@@ -515,9 +504,7 @@ const GoldenPage = (props) => {
                               <LazyLoad 
                                 height={359} 
                                 offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
@@ -539,9 +526,7 @@ const GoldenPage = (props) => {
                               <LazyLoad 
                                 height={359} 
                                 offset={100} 
-                                placeholder={
-                                  <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
-                                } 
+
                                 once 
                               >
                                 <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
