@@ -1,6 +1,7 @@
 .imageCarousel3 .carousel{
     width: 130%;
     padding:0;
+    margin-bottom: 48px;
 }
 .imageCarousel3 .title{
     font-size: 42px;
@@ -13,7 +14,7 @@
 }
 .imageCarousel3 .box{    
     padding: 7px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
 }
 .imageCarousel3 .box .img{
     aspect-ratio: 160/213;
@@ -73,7 +74,7 @@
     .imageCarousel3 :global(button.slick-prev),
     .imageCarousel3 :global(button.slick-next)
     {
-        top:85px;
+        top:30px;
     }
     .imageCarousel3 :global(button.slick-prev){
         left: auto;
@@ -89,9 +90,6 @@
     .imageCarousel3 .box .txt{
         font-weight: 600;
         font-size: 20px;
-    }
-    .imageCarousel3 .carousel{
-        padding:50px 0;
     }
     .imageCarousel3 :global(.frameBox){
         padding: 0;

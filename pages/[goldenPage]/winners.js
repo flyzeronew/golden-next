@@ -35,7 +35,7 @@ const  Winners = (props) => {
             <div className={cx("awardsBox")}>
               <div className={cx("frameBox")}>
 
-                <div className={cx("firstBox")}>
+                <div className={cx("firstNews")}>
                   <div className={cx("award")}>第36屆金曲獎</div>
                   <div className={cx("titleBox")}>
                     <div className={cx("title")}>最佳華語專輯獎</div>
@@ -54,11 +54,22 @@ const  Winners = (props) => {
                       </div>
                     </div>
                   </div>
+
+                  <div className={cx("imgBox")}>
+                    <a href='#'>
+                      <div className={cx("award","mo")}>得獎</div>
+                      <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="img" width={900} height={506} />
+                      <div className={cx("txtBox")}>
+                        <div className={cx("award")}>得獎</div>
+                        <div className={cx("txt")}>草東沒有派對《瓦合》</div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
 
                 <div className={cx("list")}>
+                  <div className={cx("award")}>入圍名單</div>
                   <ul>
-
                     <li>
                       <a href='#'>
                         <div className={cx("imgBox")}>
@@ -71,15 +82,14 @@ const  Winners = (props) => {
                               } 
                               once 
                             >
-                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                              <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
-                          <div className={cx("title")}>最佳華語專輯獎</div>
-                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
-                        </div>
-                        
+                          <div className={cx("title")}>瓦合瓦合瓦合瓦合瓦合瓦合瓦合瓦</div>
+                          <div className={cx("txt")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                        </div>                        
                       </a>
                     </li>
 
@@ -95,15 +105,14 @@ const  Winners = (props) => {
                               } 
                               once 
                             >
-                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                              <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
-                          <div className={cx("title")}>最佳華語專輯獎</div>
-                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
-                        </div>
-                        
+                          <div className={cx("title")}>瓦合瓦合瓦合瓦合瓦合瓦合瓦合瓦</div>
+                          <div className={cx("txt")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                        </div>                    
                       </a>
                     </li>
                     
@@ -119,15 +128,14 @@ const  Winners = (props) => {
                               } 
                               once 
                             >
-                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                              <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad>                            
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
-                          <div className={cx("title")}>最佳華語專輯獎</div>
-                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
-                        </div>
-                        
+                          <div className={cx("title")}>瓦合瓦合瓦合瓦合瓦合瓦合瓦合瓦</div>
+                          <div className={cx("txt")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                        </div>                        
                       </a>
                     </li>
 
@@ -143,15 +151,14 @@ const  Winners = (props) => {
                               } 
                               once 
                             >
-                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                              <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
-                          <div className={cx("title")}>最佳華語專輯獎</div>
-                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
-                        </div>
-                        
+                          <div className={cx("title")}>瓦合瓦合瓦合瓦合瓦合瓦合瓦合瓦</div>
+                          <div className={cx("txt")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                        </div>                    
                       </a>
                     </li>
 
@@ -167,15 +174,14 @@ const  Winners = (props) => {
                               } 
                               once 
                             >
-                              <img src={`${appUrl}/golden/images/awards-01.jpg`} alt="logo" width={160} height={160} />
+                              <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="logo" width={160} height={160} />
                             </LazyLoad> 
                           </div>
                         </div>
                         <div className={cx("txtBox")}>
-                          <div className={cx("title")}>最佳華語專輯獎</div>
-                          <div className={cx("txt")}>《期待集》許鈞,《姿態》傻子與白痴, 帶你飛》告五人,《瓦合》草東沒有派對,《期待集》許鈞,《姿態》傻子與白痴</div>
-                        </div>
-                        
+                          <div className={cx("title")}>瓦合瓦合瓦合瓦合瓦合瓦合瓦合瓦</div>
+                          <div className={cx("txt")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                        </div>                        
                       </a>
                     </li>
 
@@ -188,6 +194,12 @@ const  Winners = (props) => {
                   </a>
                 </div>
               </div>
+            </div>
+          </section>
+
+          <section>
+            <div className={cx("moreReadBox")}>
+
             </div>
           </section>
         </article>

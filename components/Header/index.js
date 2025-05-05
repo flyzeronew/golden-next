@@ -22,7 +22,7 @@ const Header = (props) => {
     }, []);
 
     return (
-        <header>
+        <header>            
             <div className={cx("menu" , isScrolled ? 'act' : '' )}>
                 <nav>
                     <div className={cx("logo")}>
