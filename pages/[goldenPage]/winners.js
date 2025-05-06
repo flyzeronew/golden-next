@@ -11,11 +11,16 @@ const  Winners = (props) => {
   const [menuShow, setMenuShow] = useState(false);
   const cx = classNames.bind(styles);
   const appUrl = process.env.NEXT_PUBLIC_APP_URL;
-  const menu = props.menu;  
   const pathname = usePathname();
   const url = `${appUrl}${pathname}`;
+  const ogImage = `${appUrl}/golden/images/og-img-goldenmusic2025.jpg`;
+  
   const pageName = 'winners';
-  const ogImage = `${appUrl}/golden/images/og-img.jpg`;
+  const projectName = props.projectName;
+  const menuData = props.menu;
+  const menu = menuData.find(item => item.name === projectName).menu;
+  const metaData = props.meta;
+  const meta = metaData.find(item => item.name === projectName).winners;
 
   function menuShowClick() {
     setMenuShow(true);    
@@ -29,15 +34,17 @@ const  Winners = (props) => {
   return (
     <div className="container" >
       <CustomHead 
-        title='2025金曲獎得獎名單｜第36屆金曲獎入圍歌手與獲獎作品一次看'
-        description='金曲獎得獎名單,金曲獎得主,金曲獎女歌手,金曲獎男歌手,2025金曲獎得獎名單,第36屆金曲獎得獎名單,金曲獎入圍名單,2025金曲獎入圍名單,第36屆金曲獎入圍名單'
-        keywords='2025第36屆金曲獎入圍暨得獎名單出爐！金曲獎最佳男歌手、女歌手、年度歌曲、專輯、最佳新人等所有獲獎名單一次完整整理。'
-        url={url}
-        ogTitle='2025金曲獎得獎名單｜第36屆金曲獎入圍歌手與獲獎作品一次看'
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        ogTitle={meta.title}
+        url={url}        
         ogImage={ogImage}
       />
-      <Header menu={menu} pageName={pageName} />
+      <h1 className="display_none" >{meta.title}</h1>
 
+      <Header menu={menu} pageName={pageName} />
+      
       <main className={cx("winnersPage")}>
         <article>
           <section>
@@ -427,14 +434,20 @@ export default Winners;
 
 
 export async function getServerSideProps({ params, req }) {
+  const projectName = params.goldenPage || params.goldenPage;
+  const metaUrl = new URL('/api/meta', process.env.NEXT_PUBLIC_APP_URL)
+  const metaRes = await fetch(metaUrl)
+  const meta = await metaRes.json()
 
-    const menuUrl = new URL('/api/menu', process.env.NEXT_PUBLIC_APP_URL)
-    const menuRes = await fetch(menuUrl)
-    const menu = await menuRes.json()
-  
-    return {
-      props: {
-        menu,
-      },
-    }
+  const menuUrl = new URL('/api/menu', process.env.NEXT_PUBLIC_APP_URL)
+  const menuRes = await fetch(menuUrl)
+  const menu = await menuRes.json()
+
+  return {
+    props: {
+      projectName,
+      menu,
+      meta
+    },
   }
+}

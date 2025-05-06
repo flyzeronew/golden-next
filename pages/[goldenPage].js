@@ -10,24 +10,33 @@ import Sponsor from '../components/GoldenPage/Sponsor'
 import styles from './goldenPage.module.scss'
 import classNames from 'classnames/bind'
 
-const GoldenPage = (props) => {  
+const GoldenPage = (props) => {
+
   const cx = classNames.bind(styles);
   const appUrl = process.env.NEXT_PUBLIC_APP_URL;
-  const ogImage = `${appUrl}/golden/images/og-img.jpg`;
+  const ogImage = `${appUrl}/golden/images/og-img-goldenmusic2025.jpg`;
+
   const pathname = usePathname();
   const url = `${appUrl}${pathname}`;
-  const pageName = pathname.split('/')[1];
-  const menu = props.menu;  
+  const pageName = 'home';
+  const projectName = props.projectName;
+  const menuData = props.menu;
+  const menu = menuData.find(item => item.name === projectName).menu;
+  const metaData = props.meta;
+  const meta = metaData.find(item => item.name === projectName).home;
+
   return (
     <div className="container" >
       <CustomHead 
-        title='2025第36屆金曲獎直播＆得獎名單｜紅毯星光大道一次看'
-        description='金曲獎,金曲獎直播,金曲獎得獎名單,2025金曲獎,第36屆金曲獎,金曲獎表演,金曲獎得主,金曲獎女歌手,金曲獎主持人,金曲獎男歌手,金曲獎名單,金曲獎紅毯,金曲獎歷屆得獎名單,金曲獎星光大道,金曲獎線上看,金曲獎電視轉播'
-        keywords='2025金曲獎完整資訊看這裡！第36屆金曲獎直播、得獎名單、星光大道紅毯、最佳男女歌手獎落誰家？精彩表演一次掌握，鎖定最強音樂盛典。'
-        url={url}
-        ogTitle='2025第36屆金曲獎直播＆得獎名單｜紅毯星光大道一次看'
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        ogTitle={meta.title}
+        url={url}        
         ogImage={ogImage}
       />
+      <h1 className="display_none" >{meta.title}</h1>
+
       <Header menu={menu} pageName={pageName} />
       <main className={cx("homePage")}>
         <div className={cx("kvBox")}>
@@ -558,6 +567,10 @@ const GoldenPage = (props) => {
 export default GoldenPage;
 
 export async function getServerSideProps({ params, req }) {
+  const projectName = params.goldenPage || params.goldenPage;
+  const metaUrl = new URL('/api/meta', process.env.NEXT_PUBLIC_APP_URL)
+  const metaRes = await fetch(metaUrl)
+  const meta = await metaRes.json()
 
   const menuUrl = new URL('/api/menu', process.env.NEXT_PUBLIC_APP_URL)
   const menuRes = await fetch(menuUrl)
@@ -565,7 +578,9 @@ export async function getServerSideProps({ params, req }) {
 
   return {
     props: {
+      projectName,
       menu,
+      meta
     },
   }
 }
