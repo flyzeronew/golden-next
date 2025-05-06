@@ -32,7 +32,7 @@ const GoldenPage = (props) => {
         description={meta.description}
         keywords={meta.keywords}
         ogTitle={meta.title}
-        url={url}        
+        url={url}
         ogImage={ogImage}
       />
       <h1 className="display_none" >{meta.title}</h1>

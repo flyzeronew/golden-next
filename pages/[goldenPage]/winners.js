@@ -14,7 +14,7 @@ const  Winners = (props) => {
   const pathname = usePathname();
   const url = `${appUrl}${pathname}`;
   const ogImage = `${appUrl}/golden/images/og-img-goldenmusic2025.jpg`;
-  
+
   const pageName = 'winners';
   const projectName = props.projectName;
   const menuData = props.menu;
@@ -38,7 +38,7 @@ const  Winners = (props) => {
         description={meta.description}
         keywords={meta.keywords}
         ogTitle={meta.title}
-        url={url}        
+        url={url}
         ogImage={ogImage}
       />
       <h1 className="display_none" >{meta.title}</h1>

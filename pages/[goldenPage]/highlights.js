@@ -29,10 +29,10 @@ const  Highlights = (props) => {
         description={meta.description}
         keywords={meta.keywords}
         ogTitle={meta.title}
-        url={url}        
+        url={url}
         ogImage={ogImage}
       />
-      <h1 className="display_none" >2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看</h1>
+      <h1 className="display_none" >{meta.title}</h1>
 
       <Header menu={menu} pageName={pageName} />
       
