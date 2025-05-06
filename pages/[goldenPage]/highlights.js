@@ -1,5 +1,7 @@
 import { usePathname } from 'next/navigation'
+import LazyLoad from 'react-lazyload'
 import CustomHead from '../../components/CustomHead'
+import ImageCarousel4 from '../../components/GoldenPage/ImageCarousel4'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import styles from './highlights.module.scss'
@@ -29,9 +31,165 @@ const  Highlights = (props) => {
       <Header menu={menu} pageName={pageName} />
 
       <main className={cx("highlightsPage")}>
-        
-      </main>
+        <article>
+          <section>
+            <div className={cx("focusBox")}>
+              <div className={cx("frameBox")}>
+                <div className={cx("title","dark")}>焦點新聞</div>
+                <div className={cx("firstNews")}>
+                  <a href='#'>
+                    <div className={cx("imgBox")}>
+                      <div className={cx("img")}>
+                        <LazyLoad 
+                          height={359} 
+                          offset={100} 
+                          placeholder={
+                            <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                          } 
+                          once 
+                        >
+                          <img src={`${appUrl}/golden/images/focus-img01.jpg`} alt="img" width={640} height={359} />
+                        </LazyLoad>
+                      </div>
+                    </div>
+                    <div className={cx("txtBox")}>
+                      <div className={cx("time")}>2024.06.30 </div>
+                      <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                    </div>
+                  </a>
+                </div>
+                <div className={cx("list")}>
+                  <ul>
 
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </LazyLoad>                          
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("time")}>2024.06.30 </div>
+                          <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                        </div>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("time")}>2024.06.30 </div>
+                          <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                        </div>
+                      </a>
+                    </li>                    
+                    
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("time")}>2024.06.30 </div>
+                          <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                        </div>
+                      </a>
+                    </li>
+                    
+                    <li>
+                      <a href='#'>
+                        <div className={cx("imgBox")}>
+                          <div className={cx("img")}>
+                            <LazyLoad 
+                              height={359} 
+                              offset={100} 
+                              placeholder={
+                                <img src={`${appUrl}/golden/images/lazy-img.webp`} alt="預設圖" width={500} height={281} />
+                              } 
+                              once 
+                            >
+                              <img src={`${appUrl}/golden/images/esg02.jpg`} alt="img" width={640} height={359} />
+                            </LazyLoad> 
+                          </div>
+                        </div>
+                        <div className={cx("txtBox")}>
+                          <div className={cx("time")}>2024.06.30 </div>
+                          <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立</div>
+                        </div>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div className={cx("moreBox")}>
+                  <a href='#'>
+                    <span>看更多</span>
+                    <img src={`${appUrl}/golden/images/arrow_upward.svg`} alt="logo" width={16} height={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <ImageCarousel4 title='得獎感言' data='' />
+          </section>
+
+          <section className={cx("bgColor02")}>
+            <div className={cx("interview")}>
+              <div className={cx("frameBox")}>
+                <div className={cx("title")}>人物專訪</div>
+                <div className={cx("box")}>
+                  <a href='#'>
+                    <div className={cx("imgBox")}>
+                      <img src={`${appUrl}/golden/images/people-img01.jpg`} alt="ㄕㄩㄛ" width={500} height={500} />
+                    </div>
+                    <div className={cx("txtBox")}>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+        </article>
+      </main>
       <Footer />
     </div>
   );

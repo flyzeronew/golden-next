@@ -73,7 +73,7 @@ function ImageCarousel2(props) {
     return (
         <>
 
-            <div className={cx("imageCarousel2")}>
+            <div className={cx("imageCarousel")}>
                 <div className={cx("frameBox")}>
                     <div className={cx("carousel")}>
                         <div className={cx("title")}>{title}</div>

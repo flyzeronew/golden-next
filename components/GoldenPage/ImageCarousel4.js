@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import styles from './ImageCarousel3.module.scss';
+import styles from './ImageCarousel4.module.scss';
 import classnames from "classnames/bind";
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css'
@@ -22,8 +22,11 @@ function ImageCarousel(props) {
             {
                 breakpoint: 767,
                 settings: {
-                    slidesToShow: 2,
+                    arrows: false,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: "30px", 
                 },
             },
         ],
@@ -33,14 +36,16 @@ function ImageCarousel(props) {
             <div className={cx("frameBox")}>
                 <div className={cx("carousel")}>
                     <div className={cx("title")}>{title}</div>
-                    <Slider {...settings}>
-                    
+                    <Slider {...settings}>                    
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("title")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                                    <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                </div>
                             </a>
                         </div>
                         <div className={cx("box")}>
@@ -48,7 +53,10 @@ function ImageCarousel(props) {
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("title")}>草東沒有派對</div>
+                                    <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                </div>
                             </a>
                         </div>
                         <div className={cx("box")}>
@@ -56,7 +64,10 @@ function ImageCarousel(props) {
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("title")}>草東沒有派對</div>
+                                    <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                </div>
                             </a>
                         </div>
                         <div className={cx("box")}>
@@ -64,7 +75,10 @@ function ImageCarousel(props) {
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("title")}>草東沒有派對</div>
+                                    <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                </div>
                             </a>
                         </div>
                         <div className={cx("box")}>
@@ -72,7 +86,10 @@ function ImageCarousel(props) {
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("title")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                                    <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                </div>
                             </a>
                         </div>
                         <div className={cx("box")}>
@@ -80,7 +97,10 @@ function ImageCarousel(props) {
                                 <div className={cx("img")}>
                                     <img src={`${appUrl}/golden/images/carousel-img.jpg`} alt="logo" width={330} height={264} />
                                 </div>
-                                <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                <div className={cx("txtBox")}>
+                                    <div className={cx("title")}>草東沒有派對草東沒有派對草東沒有派對草東沒有派對</div>
+                                    <div className={cx("txt")}>2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！2024金曲獎頒獎典禮亮點 ！ 線上看「表演嘉賓、頒獎陣容」精彩看點立刻懂！</div>
+                                </div>
                             </a>
                         </div>
                     </Slider>

@@ -226,7 +226,7 @@ const  Winners = (props) => {
                       </a>
                     </li>
 
-                    <li>
+                    <li className={cx("act")}>
                       <a href='#'>
                         <div className={cx("imgBox")}>
                           <div className={cx("img")}>

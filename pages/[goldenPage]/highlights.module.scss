@@ -1,8 +1,189 @@
 .highlightsPage{
     width: 100%;
     display: block;
-    background: linear-gradient(to bottom,  #DBAC67 0%,#ffffff 60%);
+    background: linear-gradient(to bottom,  #DBAC67 0%,#ffffff 40%);
     overflow: hidden;
     padding-top: 64px;
-    height: 60vh;
 }
+
+// 焦點新聞區塊
+.focusBox .title{
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+.focusBox .title.dark{
+    color: #fff;
+}
+.focusBox.dark .title{
+    font-size: 42px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right,  #efebe6 1%,#e3c8a5 49%,#f6f0e8 100%);
+    background-clip: text;
+    color: transparent;
+}
+.focusBox .firstNews a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+.focusBox .firstNews .imgBox{
+    width: 70%;
+    margin-bottom: 30px;
+}
+.focusBox .img{
+    overflow: hidden;
+    aspect-ratio: 16/9;
+}
+.focusBox .firstNews .txtBox{
+    width: 30%;
+}
+.focusBox .time{
+    font-weight: 400;
+    font-size: 13px;
+    color: #98836B;
+    margin-bottom: 15px;
+}
+.focusBox .firstNews .txt,
+.focusBox .list .txt
+{
+    font-family: "Zen Old Mincho";
+    font-weight: 600;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.focusBox .firstNews .txt{
+    font-size: 28px;
+    -webkit-line-clamp: 4;
+}
+.focusBox .list{
+    margin-bottom: 48px;
+}
+.focusBox .list ul{
+    display: flex;
+    column-gap: 15px;
+}
+.focusBox .list ul li{
+    border-right: 1px rgba(0,0,0,0.1) solid;
+    padding-right: 15px;
+}
+.focusBox .list ul li:last-child
+{
+    border-right: 0px;
+    padding-right: 0;
+}
+.focusBox .list .img{
+    margin-bottom: 15px;
+}
+.focusBox .list .txt{
+    font-size: 22px;
+    -webkit-line-clamp: 3;
+}
+@media (max-width:1023px) {
+    .focusBox .time{
+        font-weight: 400;
+        font-size: 13px;
+        color: #98836B;
+        margin-bottom: 5px;
+    }
+    .focusBox .title{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .focusBox .firstNews .txt{
+        font-size: 24px;
+        -webkit-line-clamp: 3;
+    }
+    .focusBox .list .txt{
+        font-size: 20px;
+        -webkit-line-clamp: 3;
+    }
+    .focusBox .firstNews{
+        margin-bottom: 48px;
+    }
+    .focusBox .firstNews a{
+        display: block;
+    }
+    .focusBox .firstNews .imgBox{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .focusBox .firstNews .txtBox{
+        width: 100%;
+    }
+    .focusBox .list ul{
+        display: block;
+    }
+    .focusBox .list ul li{
+        margin-bottom: 24px;
+        padding-bottom: 24px;
+        border-right: 0px rgba(0,0,0,0.1) solid;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .focusBox .list ul li:last-child{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+    }
+    .focusBox .list ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+    .focusBox .list .imgBox{
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+    .focusBox .list .imgBox .img{
+        margin-bottom: 0;
+    }
+    .focusBox .list .txtBox{
+        width: 65%;
+    }
+    .focusBox .list .img{
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .focusBox .list .img img {
+        transform: scale(2);
+        transform-origin: center center;
+    }
+}
+// 焦點新聞區塊ed
+
+
+// 人物專訪
+.interview .title{
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+.interview .box{
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+.interview .box a{
+    display: flex;
+    align-items: center;
+}
+.interview .box .imgBox{
+    width: 50%;
+    line-height: 0;
+}
+.interview .box .txtBox{
+    width: 50%;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+
+// 人物專訪 ed

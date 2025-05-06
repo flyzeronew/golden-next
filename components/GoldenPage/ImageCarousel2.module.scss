@@ -1,47 +1,47 @@
-.imageCarousel2{
+.imageCarousel{
     position: relative;
 }
-.imageCarousel2 .title{
+.imageCarousel .title{
     font-weight: 500;
     font-size: 26px;
     margin-bottom: 20px;
     padding-left: 8px;
 }
-.imageCarousel2 .carousel{
+.imageCarousel .carousel{
     width: 100%;
 }
-.imageCarousel2 :global(.frameBox){
+.imageCarousel :global(.frameBox){
     position: relative;    
 }
-.imageCarousel2 .box{
+.imageCarousel .box{
     padding: 8px;
     cursor: pointer;
 }
-.imageCarousel2 .box a{
+.imageCarousel .box a{
     position: relative;
     overflow: hidden;
 }
-.imageCarousel2 .box .txtBox{
+.imageCarousel .box .txtBox{
     position: absolute;
     bottom: 0;
     padding:100px 15px 15px 15px;
     background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 50% ,rgba(0,0,0,1) 100%); 
 }
-.imageCarousel2 .box .txtBox .name{
+.imageCarousel .box .txtBox .name{
     font-weight: 500;
     font-size: 13px;
     color: #F0D4AD;
     margin-bottom: 5px;
 }
 
-.imageCarousel2 .box .img{
+.imageCarousel .box .img{
     position: relative;
     overflow: hidden;
     aspect-ratio: 270/360;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
-.imageCarousel2 .box .txt{
+.imageCarousel .box .txt{
     font-family: "Zen Old Mincho";
     font-weight: 600;
     font-size: 22px;
@@ -51,65 +51,65 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
 }
-.imageCarousel2 :global(button.slick-prev),
-.imageCarousel2 :global(button.slick-next)
+.imageCarousel :global(button.slick-prev),
+.imageCarousel :global(button.slick-next)
 {
     top:20px;
     width: 32px;
     height: 32px;
 }
-.imageCarousel2 :global(button.slick-prev:before), 
-.imageCarousel2 :global(button.slick-next:before)
+.imageCarousel :global(button.slick-prev:before), 
+.imageCarousel :global(button.slick-next:before)
 {
     content: '';
 }
-.imageCarousel2 :global(.slick-list),
-.imageCarousel2 :global(.slick-slider)
+.imageCarousel :global(.slick-list),
+.imageCarousel :global(.slick-slider)
 {
     position:unset;
 }
-.imageCarousel2 :global(button.slick-prev){
+.imageCarousel :global(button.slick-prev){
     left: auto;
     right: 50px;
     background: url(/golden/images/carousel-arraw-l2.svg) no-repeat center center;
     background-size: 100%;
     z-index: 2;
 }
-.imageCarousel2 :global(button.slick-next){
+.imageCarousel :global(button.slick-next){
     right: 7px;
     background: url(/golden/images/carousel-arraw-r2.svg) no-repeat center center;
     background-size: 100%;
     z-index: 2;
 }
 @media (max-width:767px) {
-    .imageCarousel2 :global(button.slick-prev),
-    .imageCarousel2 :global(button.slick-next)
+    .imageCarousel :global(button.slick-prev),
+    .imageCarousel :global(button.slick-next)
     {
         top:20px;
     }
-    .imageCarousel2{
+    .imageCarousel{
         position: relative;
     }
-    .imageCarousel2 .carousel{
+    .imageCarousel .carousel{
         width: 150%;
     }
-    .imageCarousel2 .carousel .mask{
+    .imageCarousel .carousel .mask{
         display: none;
     }
-    .imageCarousel2 .box .txt{
+    .imageCarousel .box .txt{
         font-size: 20px;
     }
-    .imageCarousel2 :global(.frameBox){
+    .imageCarousel :global(.frameBox){
         overflow: hidden;
         padding: 0;
         position: unset;
         padding-left: 13px;
     }
-    .imageCarousel2 :global(button.slick-prev){
+    .imageCarousel :global(button.slick-prev){
         left: auto;
         right: 57px;
     }
-    .imageCarousel2 :global(button.slick-next){
+    .imageCarousel :global(button.slick-next){
         right: 15px;
     }
 }

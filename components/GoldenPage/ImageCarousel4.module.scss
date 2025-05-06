@@ -1,5 +1,5 @@
 .imageCarousel .carousel{
-    width: 130%;
+    width: 110%;
     padding:0;
     margin-bottom: 48px;
 }
@@ -12,13 +12,31 @@
     position: relative;
     overflow: hidden;
 }
-.imageCarousel .box{    
-    padding: 7px;
-    padding-bottom: 0;
+.imageCarousel .box{
+    padding: 10px;
+    padding-bottom: 10px;
+}
+.imageCarousel .box a{
+    display:block;   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .imageCarousel .box .img{
     aspect-ratio: 160/213;
-    margin-bottom: 20px;
+}
+.imageCarousel .box .txtBox{
+    padding: 20px;
+}
+.imageCarousel .box .title{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #98836B;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-align: center;
 }
 .imageCarousel .box .txt{
     font-family: "Zen Old Mincho";
@@ -28,7 +46,7 @@
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;    
 }
 .imageCarousel :global(button.slick-prev),
 .imageCarousel :global(button.slick-next)
@@ -64,12 +82,16 @@
     z-index: 2;
 }
 @media (max-width:767px) {
+    .imageCarousel .box{
+        padding: 7px;
+    }
     .imageCarousel .carousel{
-        width: 150%;
+        width: 100%;
     }
     .imageCarousel .title{
         font-size: 36px;
         margin-bottom: 20px;
+        padding-left: 15px;
     }
     .imageCarousel :global(button.slick-prev),
     .imageCarousel :global(button.slick-next)
@@ -93,6 +115,6 @@
     }
     .imageCarousel :global(.frameBox){
         padding: 0;
-        padding-left: 15px;
+        padding-left: 0;
     }
 }
