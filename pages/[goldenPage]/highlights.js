@@ -20,16 +20,16 @@ const  Highlights = (props) => {
   const menuData = props.menu;
   const menu = menuData.find(item => item.name === projectName).menu;
   const metaData = props.meta;
-  const meta = metaData.find(item => item.name === projectName).winners;
+  const meta = metaData.find(item => item.name === projectName).highlights;
 
   return (
     <div className="container" >
       <CustomHead 
-        title='2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看'
-        description='2025金曲獎新聞不漏接！《TVBS新聞網》專訪入圍歌手，看主持人精彩橋段、頒獎典禮表演、紅毯亮點、得獎感言與話題事件，第36屆金曲獎即時更新新聞一次掌握！'
-        keywords='金曲獎表演,金曲獎主持人,金曲獎焦點,金曲獎新聞,金曲獎紅毯,金曲獎星光大道,2025金曲獎頒獎典禮,2025金曲獎,第36屆金曲獎'
-        ogTitle='2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看'
-        url={url}
+        title={meta.title}
+        description={meta.description}
+        keywords={meta.keywords}
+        ogTitle={meta.title}
+        url={url}        
         ogImage={ogImage}
       />
       <h1 className="display_none" >2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看</h1>
