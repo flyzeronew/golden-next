@@ -33,7 +33,7 @@ const Header = (props) => {
                         <ul>
                             {menu?.map((item, index) => (
                                 <li key={index}>
-                                    <a href={`${item.url}`} className={cx(item.name === pageName ? 'act' : '')}>
+                                    <a href={`${item.url}`} className={cx(item.page === pageName ? 'act' : '')}>
                                         {item.title}
                                     </a>
                                 </li>

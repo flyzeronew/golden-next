@@ -7,17 +7,17 @@ export default function handler(req, res) {
                 {
                     'title':'金曲36',
                     'url':`${appUrl}/goldenmusic2025`,
-                    'name':'home',
+                    'page':'home',
                 },
                 {
                     'title':'獎項名單',
                     'url':`${appUrl}/goldenmusic2025/winners`,
-                    'name':'winners',
+                    'page':'winners',
                 },
                 {
                     'title':'金曲焦點',
                     'url':`${appUrl}/goldenmusic2025/highlights`,
-                    'name':'highlights',
+                    'page':'highlights',
                 },
             ],
         },
