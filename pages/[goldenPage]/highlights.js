@@ -29,7 +29,7 @@ const  Highlights = (props) => {
         ogImage={ogImage}
       />
       <Header menu={menu} pageName={pageName} />
-
+      <h1 className="display_none" >2025金曲獎焦點新聞｜人物專訪、紅毯亮點、頒獎典禮表演一次看</h1>
       <main className={cx("highlightsPage")}>
         <article>
           <section>

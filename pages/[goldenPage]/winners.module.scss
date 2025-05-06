@@ -212,8 +212,11 @@
     display: block;
 }
 @media (max-width:1023px) {
+    .awardsBox .menuLigthBox{
+        top:0;
+    }
     .awardsBox .menuLigthBox .fixed{
-        height: 78vh;
+        height: 85vh;
         background-color: #fff;
     }
     .awardsBox .menuLigthBox .fixed .scrollBox{
