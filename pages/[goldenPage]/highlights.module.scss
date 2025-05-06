@@ -1,7 +1,7 @@
 .highlightsPage{
     width: 100%;
     display: block;
-    background: linear-gradient(to bottom,  #DBAC67 0%,#ffffff 40%);
+    background: linear-gradient(to bottom,  #DBAC67 0%,#ffffff 20%);
     overflow: hidden;
     padding-top: 64px;
 }
@@ -162,6 +162,9 @@
 
 
 // 人物專訪
+.interview{
+    margin: 48px 0;
+}
 .interview .title{
     font-weight: 500;
     font-size: 26px;
@@ -178,12 +181,141 @@
 .interview .box .imgBox{
     width: 50%;
     line-height: 0;
+    aspect-ratio: 1/1;
 }
 .interview .box .txtBox{
     width: 50%;
     padding: 24px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
-
+.interview .box .title,
+.interview .box .txt{
+    width: 100%;
+    font-family: "Zen Old Mincho";
+}
+.interview .box .title{
+    font-weight: 600;
+    font-size: 22px;
+    color: #98836B;
+    margin-bottom: 10px;
+}
+.interview .box .txt{
+    font-weight: 600;
+    font-size: 28px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+}
+@media (max-width:1023px) {
+    .interview{
+        margin: 0;
+    }
+    .interview .box .imgBox,
+    .interview .box .txtBox
+    {
+        width: 100%;
+    }
+    .interview .box .txtBox{
+        padding:20px;
+    }
+    .interview .box a{
+        display: block;
+    }
+    .interview .box .title{
+        font-size: 20px;
+    }
+    .interview .box .txt{
+        font-size: 24px;
+    }
+}
 // 人物專訪 ed
+
+// 編輯精選
+.featured{
+    margin: 48px 0;
+}
+.featured .title{
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+.featured .box{
+    background-color: #fff;
+}
+.featured .box a{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.featured .box .imgBox{
+    width: 55%;
+    line-height: 0;
+    overflow: hidden;
+}
+.featured .box .txtBox{
+    width: 45%;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.featured .box .title,
+.featured .box .txt{
+    width: 100%;
+    font-family: "Zen Old Mincho";
+}
+.featured .box .title{
+    font-weight: 600;
+    font-size: 28px;
+    color: #98836B;
+    margin-bottom: 24px;
+}
+.featured .box .txt{
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+}
+.featured .box .authorBox{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.featured .box .authorBox .img{
+    width: 24px;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    line-height: 0;
+    border-radius: 60px;
+}
+@media (max-width:1023px) {
+    .featured{
+        margin: 0;
+    }
+    .featured .box .imgBox,
+    .featured .box .txtBox
+    {
+        width: 100%;
+    }
+    .featured .box .txtBox{
+        padding:20px 0;
+    }
+    .featured .box a{
+        display: block;
+    }
+    .featured .box .title{
+        font-size: 24px;
+    }
+    .featured .box .txt{
+        font-size: 20px;
+    }
+}
+// 編輯精選 ed

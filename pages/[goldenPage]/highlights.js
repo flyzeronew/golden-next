@@ -177,10 +177,11 @@ const  Highlights = (props) => {
                 <div className={cx("box")}>
                   <a href='#'>
                     <div className={cx("imgBox")}>
-                      <img src={`${appUrl}/golden/images/people-img01.jpg`} alt="ㄕㄩㄛ" width={500} height={500} />
+                      <img src={`${appUrl}/golden/images/people-img01.jpg`} alt="img" width={500} height={500} />
                     </div>
                     <div className={cx("txtBox")}>
-                      
+                        <div className={cx("title")}>9m88</div>
+                        <div className={cx("txt")}>同時入圍金曲歌王和最佳新人的辣個男人：一起認識這位新生代 R&B 小王子「鶴 The Crane」！同時入圍金曲歌王和最佳新人的辣個男人：一起認識這位新生代 R&B 小王子「鶴 The Crane」！</div>
                     </div>
                   </a>
                 </div>
@@ -188,6 +189,33 @@ const  Highlights = (props) => {
             </div>
           </section>
           
+          <section className={cx("bgColor01")}>
+            <div className={cx("featured")}>
+              <div className={cx("frameBox")}>
+                <div className={cx("title")}>編輯精選</div>
+                <div className={cx("box")}>
+                  <a href='#'>
+                    <div className={cx("imgBox")}>
+                      <img src={`${appUrl}/golden/images/people-img02.jpg`} alt="img" width={480} height={372} />
+                    </div>
+                    <div className={cx("txtBox")}>
+                        <div className={cx("title")}>9M88《Sent》</div>
+                        <div className={cx("txt")}>「 應該是本屆的一大遺珠，這張專輯找來各路頂尖樂手，樂句對話都既協調又刺激，曲序編排也有起承轉合，像是把現場演出原汁原味地帶進耳機裡 。 」</div>
+                        <div className={cx("authorBox")}>
+                          <div className={cx("img")}>
+                            <img src={`${appUrl}/golden/images/people-img01.jpg`} alt="img" width={20} height={20} />
+                          </div>
+                          <div className={cx("author")}>
+                            <span>Eddie</span>
+                            <span>/ 責任編輯</span>
+                          </div>
+                        </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
         </article>
       </main>
       <Footer />
