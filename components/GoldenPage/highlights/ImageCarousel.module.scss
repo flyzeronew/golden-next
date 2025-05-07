@@ -1,10 +1,14 @@
+.imageCarousel{
+    margin-bottom: 32px;
+}
 .imageCarousel .carousel{
     width: 110%;
     padding:0;
-    margin-bottom: 48px;
+    margin-bottom: 80px;
 }
 .imageCarousel .title{
-    font-size: 42px;
+    font-weight: 500;
+    font-size: 26px;
     margin-bottom: 20px;
     padding-left: 5px;
 }
@@ -51,7 +55,7 @@
 .imageCarousel :global(button.slick-prev),
 .imageCarousel :global(button.slick-next)
 {
-    top:40px;
+    top:24px;
     width: 32px;
     height: 32px;
 }
@@ -89,8 +93,6 @@
         width: 100%;
     }
     .imageCarousel .title{
-        font-size: 36px;
-        margin-bottom: 20px;
         padding-left: 15px;
     }
     .imageCarousel :global(button.slick-prev),

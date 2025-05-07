@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import LazyLoad from 'react-lazyload'
+import ImageCarousel from '../../components/GoldenPage/winners/ImageCarousel'
 import CustomHead from '../../components/CustomHead'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -198,7 +199,7 @@ const  Winners = (props) => {
                     ></div>
                   </div>
 
-                  <div className={cx("imgBox")}>
+                  {/* <div className={cx("imgBox")}>
                     <a href='#'>
                       <div className={cx("award","mo")}>得獎</div>
                       <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="img" width={900} height={506} />
@@ -207,7 +208,10 @@ const  Winners = (props) => {
                         <div className={cx("txt")}>草東沒有派對《瓦合》</div>
                       </div>
                     </a>
-                  </div>
+                  </div> */}
+
+                  <ImageCarousel />
+                  
                 </div>
 
                 <div className={cx("list")}>

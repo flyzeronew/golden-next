@@ -1,7 +1,7 @@
 import { usePathname } from 'next/navigation'
 import LazyLoad from 'react-lazyload'
 import CustomHead from '../../components/CustomHead'
-import ImageCarousel4 from '../../components/GoldenPage/ImageCarousel4'
+import ImageCarousel from '../../components/GoldenPage/highlights/ImageCarousel'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import styles from './highlights.module.scss'
@@ -41,7 +41,7 @@ const  Highlights = (props) => {
           <section>
             <div className={cx("focusBox")}>
               <div className={cx("frameBox")}>
-                <div className={cx("title","dark")}>焦點新聞</div>
+                <div className={cx("title")}>焦點新聞</div>
                 <div className={cx("firstNews")}>
                   <a href='#'>
                     <div className={cx("imgBox")}>
@@ -173,7 +173,7 @@ const  Highlights = (props) => {
           </section>
 
           <section>
-            <ImageCarousel4 title='得獎感言' data='' />
+            <ImageCarousel title='得獎感言' data='' />
           </section>
 
           <section className={cx("bgColor02")}>
@@ -212,8 +212,8 @@ const  Highlights = (props) => {
                             <img src={`${appUrl}/golden/images/people-img01.jpg`} alt="img" width={20} height={20} />
                           </div>
                           <div className={cx("author")}>
-                            <span>Eddie</span>
-                            <span>/ 責任編輯</span>
+                            <span className={cx("t1")}>Eddie</span>
+                            <span> / 責任編輯</span>
                           </div>
                         </div>
                     </div>

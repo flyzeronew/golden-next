@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import styles from './ImageCarousel4.module.scss';
+import styles from './ImageCarousel.module.scss';
 import classnames from "classnames/bind";
 import Slider from "react-slick"
 import 'slick-carousel/slick/slick.css'
@@ -36,7 +36,7 @@ function ImageCarousel(props) {
             <div className={cx("frameBox")}>
                 <div className={cx("carousel")}>
                     <div className={cx("title")}>{title}</div>
-                    <Slider {...settings}>                    
+                    <Slider {...settings}>
                         <div className={cx("box")}>
                             <a href="#">
                                 <div className={cx("img")}>

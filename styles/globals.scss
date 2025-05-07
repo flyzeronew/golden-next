@@ -111,12 +111,6 @@ img{
 article section{
   padding: 48px 0;
 }
-
-@media (max-width:1023px) {
-  article section{
-      padding: 48px 0;
-  }
-}
 // 文章區塊 ed
 
 .bgColor01{
@@ -145,3 +139,55 @@ article section{
   background: url(/golden/images/play-icon.png) no-repeat center center;
 }
 
+// 廣告欄位
+.adBox{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.adBox.ad_pc{
+  display: flex;
+}
+.adBox.ad_mo{
+  display:none;
+}
+.height_90{
+  min-height: 90px;
+}
+.height_100{
+  min-height: 100px;
+}
+.height_250{
+  min-height: 250px;
+}
+
+.pd48{
+  padding: 48px;
+}
+.pd-t48{
+  padding-top: 48px;
+}
+.pd-b48{
+  padding-bottom: 48px;
+}
+
+@media (max-width:1023px) {
+  .adBox.ad_pc{
+    display:none;
+  }
+  .adBox.ad_mo{
+    display: flex;
+  }
+}
+
+#news_pc_index_top,
+#news_pc_other_index_list1,
+#news_pc_index_d1,
+#news_m_index_top,
+#news_m_index_popup,
+#news_m_read_in2
+{
+  width:max-content;
+}
+// 廣告欄位 ed

@@ -1,9 +1,9 @@
 import { usePathname } from 'next/navigation'
 import LazyLoad from 'react-lazyload'
 import CustomHead from '../components/CustomHead'
-import ImageCarousel from '../components/GoldenPage/ImageCarousel'
-import ImageCarousel2 from '../components/GoldenPage/ImageCarousel2'
-import ImageCarousel3 from '../components/GoldenPage/ImageCarousel3'
+import ImageCarousel from '../components/GoldenPage/home/ImageCarousel'
+import ImageCarousel2 from '../components/GoldenPage/home/ImageCarousel2'
+import ImageCarousel3 from '../components/GoldenPage/home/ImageCarousel3'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Sponsor from '../components/GoldenPage/Sponsor'
@@ -55,6 +55,13 @@ const GoldenPage = (props) => {
         </div>
 
         <article>
+
+          <div className="adBox ad_pc height_250 pd-t48" >
+            <div id="news_pc_index_top">
+              <img src={`${appUrl}/golden/images/970x250.jpg`} alt="logo" width={970} height={250} />
+            </div>
+          </div>
+
           <section className={cx("bgColor01")}>
             <div className={cx("awardsBox")}>
               <div className={cx("frameBox")}>
@@ -205,6 +212,12 @@ const GoldenPage = (props) => {
               </div>
             </div>
           </section>
+
+          <div className="adBox ad_mo height_100 pd-b48">
+            <div id="news_m_index_top">
+              <img src={`${appUrl}/golden/images/320x100.jpg`} alt="logo" width={320} height={100} />
+            </div>
+          </div>
 
           <section className={cx("bgColor02")}>
             <div className={cx("focusBox")}>
