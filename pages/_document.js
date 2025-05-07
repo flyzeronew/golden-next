@@ -3,7 +3,8 @@ import Script from "next/script";
 
 export default function Document() {
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
-
+  const appEnv = process.env.NEXT_PUBLIC_APP_ENV;
+  const adEnv = appEnv === 'production' ? 'prod' : 'stage';
   return (
     <Html lang="zh-Hant-TW">
       <Head>
@@ -20,6 +21,20 @@ export default function Document() {
             })(window,document,'script','dataLayer','${gtmId}');
           `}
         </Script>
+
+        <Script
+          async
+          src = {`https://power.adhacker.online/tvbs/news/${adEnv}/news.js`}
+          type="text/javascript"
+          strategy ="afterInteractive"          
+        />
+
+        <Script
+          async
+          src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js'
+          type = "text/javascript"
+          strategy = "afterInteractive"          
+        />
       </Head>
       <body>
         {/* GTM noscript 放在 body 內 */}
