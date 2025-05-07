@@ -10,7 +10,6 @@ export default function Document() {
       <Head>
         {/* 使用 next/script 來載入 jQuery */}
         <Script src="https://code.jquery.com/jquery-3.6.0.min.js" strategy="beforeInteractive" />
-
         {/* 使用 next/script 來載入 GTM */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -21,14 +20,12 @@ export default function Document() {
             })(window,document,'script','dataLayer','${gtmId}');
           `}
         </Script>
-
         <Script
           async
           src = {`https://power.adhacker.online/tvbs/news/${adEnv}/news.js`}
           type="text/javascript"
           strategy ="afterInteractive"          
         />
-
         <Script
           async
           src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js'

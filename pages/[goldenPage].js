@@ -24,7 +24,7 @@ const GoldenPage = (props) => {
   const menu = menuData.find(item => item.name === projectName).menu;
   const metaData = props.meta;
   const meta = metaData.find(item => item.name === projectName).home;
-console.log(props.test);
+
   return (
     <div className="container" >
       <CustomHead 
@@ -56,9 +56,11 @@ console.log(props.test);
 
         <article>
 
-          <div className="adBox ad_pc height_250 pd-t48" >
+          <div className="adBox ad-pc height-250 pd-t48" >
             <div id="news_pc_index_top">
-              <img src={`${appUrl}/golden/images/970x250.jpg`} alt="logo" width={970} height={250} />
+            <a href='#'>
+                <img src={`${appUrl}/golden/images/ad970x250.jpg`} alt="ad" width={970} height={250} />
+              </a> 
             </div>
           </div>
 
@@ -213,9 +215,9 @@ console.log(props.test);
             </div>
           </section>
 
-          <div className="adBox ad_mo height_100 pd-b48">
+          <div className="adBox ad-mo height-100 pd-b48">
             <div id="news_m_index_top">
-              <img src={`${appUrl}/golden/images/320x100.jpg`} alt="logo" width={320} height={100} />
+              <img src={`${appUrl}/golden/images/ad320x100.jpg`} alt="ad" width={320} height={100} />
             </div>
           </div>
 
@@ -353,6 +355,28 @@ console.log(props.test);
               <ImageCarousel data=''/>
             </div>
           </section>
+
+          <div className="adBox ad-pc height-250 pd48 bgColor02">
+            <div id="news_pc_other_index_list1">
+              <a href='#'>
+                <img src={`${appUrl}/golden/images/ad970x250.jpg`} alt="ad" width={970} height={250} />
+              </a>
+            </div>
+          </div>
+
+          <div className="adBox ad-mo pd-b48 bgColor02">
+              <div class="flyOutBox">
+                  <div class="flyInBox">
+                      <div class="flyAd">
+                        <div id="news_m_read_in2">
+                          <a href='#'>
+                          <img src={`${appUrl}/golden/images/fly_ad320.jpg`} alt="ad" width={320} height={480} />
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
           
           <section className={cx("bgColor03")}>
 
@@ -485,6 +509,22 @@ console.log(props.test);
             <ImageCarousel2 title='金曲圖輯' data='' />
           </section>
 
+          <div className="adBox ad-pc height-90 pd48 bgColor02">
+            <div id="news_pc_index_d1">
+              <a href='#'>
+                <img src={`${appUrl}/golden/images/ad728x90.jpg`} alt="ad" width={728} height={90} />
+              </a>
+            </div>
+          </div>
+
+          <div className="adBox ad-mo height-250 pd48 bgColor02">
+            <div id="news_pc_index_d1">
+              <a href='#'>
+                <img src={`${appUrl}/golden/images/ad300x250.jpg`} alt="ad" width={300} height={250} />
+              </a>
+            </div>
+          </div>  
+
           <section className={cx("bgColor02")}>
             <ImageCarousel3 title='金曲專題2' data='' />
           </section>
@@ -589,12 +629,8 @@ export async function getServerSideProps({ params, req }) {
   const menuRes = await fetch(menuUrl)
   const menu = await menuRes.json()
 
-  const testRes = await fetch('https://news-v41-st.tvbs.com.tw/events/wbc-qualifiers-2025/json/totalSchedules.json')
-  const test = await testRes.json()
-
   return {
     props: {
-      test,
       projectName,
       menu,
       meta

@@ -146,19 +146,19 @@ article section{
   justify-content: center;
   align-items: center;
 }
-.adBox.ad_pc{
-  display: flex;
+.adBox.ad-pc{
+  display: block;
 }
-.adBox.ad_mo{
+.adBox.ad-mo{
   display:none;
 }
-.height_90{
+.height-90{
   min-height: 90px;
 }
-.height_100{
+.height-100{
   min-height: 100px;
 }
-.height_250{
+.height-250{
   min-height: 250px;
 }
 
@@ -173,11 +173,11 @@ article section{
 }
 
 @media (max-width:1023px) {
-  .adBox.ad_pc{
+  .adBox.ad-pc{
     display:none;
   }
-  .adBox.ad_mo{
-    display: flex;
+  .adBox.ad-mo{
+    display: block;
   }
 }
 
@@ -186,8 +186,61 @@ article section{
 #news_pc_index_d1,
 #news_m_index_top,
 #news_m_index_popup,
-#news_m_read_in2
+#news_m_read_in2,
+#news_m_index_d1,
+#news_m_index_bottom,
+#news_pc_read_top,
+#news_pc_read_d1,
+#news_m_read_popup,
+#news_m_read_top,
+#news_m_read_bottom
 {
   width:max-content;
+  margin: 0 auto;
+}
+
+/* underlay */
+@media(max-width:1023px) {
+  .flyOutBox{
+      width: 100%;
+      height: 480px;
+      position: relative;
+      visibility: visible;
+      overflow: hidden;
+  }
+  .flyInBox{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      clip: rect(0,auto,auto,0);
+  }
+  .flyAd{
+      backface-visibility: hidden;
+      transform: translate3d(0px, 0px, 0px);
+      visibility: visible;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 20%;
+      left: 0%;
+  }
+}
+/* underlay end */
+@media (max-width:1023px) {
+  .fifa_ad .ad970{display:none;}
+  .fifa_ad .ad300,.fifa_ad .ad320,.fifa_ad .ad320_fly{display:block;}
+}
+@media (max-width:767px) {
+  .lightbox_ad{display: block;}
+  .flexd_bottom_ad {
+      position: fixed;
+      bottom: 0;
+      display: block;
+  }
+}
+
+@media (max-width:359px) {
+  .fifa_ad .ad300,.fifa_ad .ad320_fly,.fly_ad .img{width:100%;}
 }
 // 廣告欄位 ed
