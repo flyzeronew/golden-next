@@ -24,7 +24,7 @@ const GoldenPage = (props) => {
   const menu = menuData.find(item => item.name === projectName).menu;
   const metaData = props.meta;
   const meta = metaData.find(item => item.name === projectName).home;
-
+console.log(props.test);
   return (
     <div className="container" >
       <CustomHead 
@@ -582,15 +582,19 @@ export default GoldenPage;
 export async function getServerSideProps({ params, req }) {
   const projectName = params.goldenPage || params.goldenPage;
   const metaUrl = new URL('/api/meta', process.env.NEXT_PUBLIC_APP_URL)
-  const metaRes = await fetch(metaUrl)
+  const metaRes = await fetch(metaUrl)  
   const meta = await metaRes.json()
 
   const menuUrl = new URL('/api/menu', process.env.NEXT_PUBLIC_APP_URL)
   const menuRes = await fetch(menuUrl)
   const menu = await menuRes.json()
 
+  const testRes = await fetch('https://news-v41-st.tvbs.com.tw/events/wbc-qualifiers-2025/json/totalSchedules.json')
+  const test = await testRes.json()
+
   return {
     props: {
+      test,
       projectName,
       menu,
       meta
