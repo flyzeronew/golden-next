@@ -518,12 +518,12 @@ const GoldenPage = (props) => {
           </div>
 
           <div className="adBox ad-mo height-250 pd48 bgColor02">
-            <div id="news_pc_index_d1">
+            <div id="news_m_index_d1">
               <a href='#'>
                 <img src={`${appUrl}/golden/images/ad300x250.jpg`} alt="ad" width={300} height={250} />
               </a>
             </div>
-          </div>  
+          </div>
 
           <section className={cx("bgColor02")}>
             <ImageCarousel3 title='金曲專題2' data='' />

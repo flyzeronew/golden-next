@@ -38,10 +38,24 @@ const  Highlights = (props) => {
       
       <main className={cx("highlightsPage")}>
         <article>
+          <div className="adBox ad-pc height-250 pd-t48" >
+            <div id="news_pc_read_top">
+            <a href='#'>
+                <img src={`${appUrl}/golden/images/ad970x250.jpg`} alt="ad" width={970} height={250} />
+              </a> 
+            </div>
+          </div>
+
+          <div className="adBox ad-mo height-250 pd-t48">
+            <div id="news_m_read_top">
+              <img src={`${appUrl}/golden/images/ad300x250.jpg`} alt="ad" width={300} height={250} />
+            </div>
+          </div>
+          
           <section>
             <div className={cx("focusBox")}>
               <div className={cx("frameBox")}>
-                <div className={cx("title")}>焦點新聞</div>
+                <div className={cx("title")}>典禮焦點</div>
                 <div className={cx("firstNews")}>
                   <a href='#'>
                     <div className={cx("imgBox")}>
@@ -172,6 +186,20 @@ const  Highlights = (props) => {
             </div>
           </section>
 
+          <div className="adBox ad-mo pd-b48">
+              <div class="flyOutBox">
+                  <div class="flyInBox">
+                      <div class="flyAd">
+                        <div id="news_m_read_in2">
+                          <a href='#'>
+                          <img src={`${appUrl}/golden/images/fly_ad320.jpg`} alt="ad" width={320} height={480} />
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
           <section>
             <ImageCarousel title='得獎感言' data='' />
           </section>
@@ -194,7 +222,15 @@ const  Highlights = (props) => {
               </div>
             </div>
           </section>
-          
+
+          <div className="adBox ad-pc height-90 pd-t48 ">
+            <div id="news_pc_index_d1">
+              <a href='#'>
+                <img src={`${appUrl}/golden/images/ad728x90.jpg`} alt="ad" width={728} height={90} />
+              </a>
+            </div>
+          </div>
+
           <section className={cx("bgColor01")}>
             <div className={cx("featured")}>
               <div className={cx("frameBox")}>

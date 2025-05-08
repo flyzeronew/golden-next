@@ -48,6 +48,21 @@ const  Winners = (props) => {
       
       <main className={cx("winnersPage")}>
         <article>
+
+          <div className="adBox ad-pc height-250 pd-t48" >
+            <div id="news_pc_read_top">
+            <a href='#'>
+                <img src={`${appUrl}/golden/images/ad970x250.jpg`} alt="ad" width={970} height={250} />
+              </a> 
+            </div>
+          </div>
+
+          <div className="adBox ad-mo height-250 pd-t48">
+            <div id="news_m_index_top">
+              <img src={`${appUrl}/golden/images/ad300x250.jpg`} alt="ad" width={300} height={250} />
+            </div>
+          </div>
+
           <section>
             <div className={cx("awardsBox")}>
               <div className={cx("frameBox")}>
@@ -199,17 +214,6 @@ const  Winners = (props) => {
                     ></div>
                   </div>
 
-                  {/* <div className={cx("imgBox")}>
-                    <a href='#'>
-                      <div className={cx("award","mo")}>得獎</div>
-                      <img src={`${appUrl}/golden/images/focus-img02.jpg`} alt="img" width={900} height={506} />
-                      <div className={cx("txtBox")}>
-                        <div className={cx("award")}>得獎</div>
-                        <div className={cx("txt")}>草東沒有派對《瓦合》</div>
-                      </div>
-                    </a>
-                  </div> */}
-
                   <ImageCarousel />
                   
                 </div>
@@ -329,6 +333,20 @@ const  Winners = (props) => {
               </div>
             </div>
           </section>
+
+          <div className="adBox ad-mo pd-b48">
+              <div class="flyOutBox">
+                  <div class="flyInBox">
+                      <div class="flyAd">
+                        <div id="news_m_read_in2">
+                          <a href='#'>
+                          <img src={`${appUrl}/golden/images/fly_ad320.jpg`} alt="ad" width={320} height={480} />
+                          </a>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
           <section>
             <div className={cx("moreReadBox")}>
