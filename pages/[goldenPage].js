@@ -30,18 +30,6 @@ const GoldenPage = (props) => {
 
   useEffect(() => {
   
-          if (typeof window !== 'undefined') {
-              window.googletag = window.googletag || { cmd: [] }            
-          }
-          window.googletag = window.googletag || {cmd: []};
-          console.log(window.googletag);
-          googletag.cmd.push(() => {    
-              // googletag.defineSlot(`/31610311/news_m_index_popup`, [[336, 280],[360, 540],[300, 250],[320, 480],[1, 1],] , 'news_m_index_popup' ).addService(googletag.pubads());
-              // googletag.pubads().setTargeting('news_channel', `events/goldenmusic2025`);
-              // window.googletag.pubads().collapseEmptyDivs();
-              // googletag.enableServices();
-              // googletag.display('news_m_index_popup');
-          });
   
   }, []);
 

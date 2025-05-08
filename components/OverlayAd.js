@@ -25,15 +25,26 @@ function OverlayAd(props) {
                 [1, 1],
             ],
         };
+        function adRun(params) {
+            
+        }
         window.googletag = window.googletag || {cmd: []};
-        googletag.cmd.push(() => {    
-            googletag.defineSlot(`/31610311/news_m_index_popup`, [[336, 280],[360, 540],[300, 250],[320, 480],[1, 1],] , 'news_m_index_popup' ).addService(googletag.pubads());
-            googletag.pubads().setTargeting('news_channel', `events/goldenmusic2025`);
-            window.googletag.pubads().collapseEmptyDivs();
-            googletag.enableServices();
-            googletag.display('news_m_index_popup');
-        });
-
+        if (window.googletag) {
+            googletag.cmd.push(() => {
+                const slot = googletag.defineSlot(`/${adType.id}/${adType.code}`, adType.size , adType.type);
+                if (slot) {
+                    slot.addService(googletag.pubads());
+                    googletag.pubads().setTargeting('news_channel', `events/${projectName}`);
+                    window.googletag.pubads().collapseEmptyDivs();
+                    googletag.enableServices();
+                    googletag.display(adType.type);
+                } else {
+                    console.error("Failed to define the ad slot.");
+                }
+            });
+        } else {
+            console.error("googletag object is not available.");
+        }
 
         const handleScroll = () => {
             setIsScrolled(50 < window.scrollY && 1023 > window.innerWidth);
@@ -56,10 +67,8 @@ function OverlayAd(props) {
                     <div className="xx" onClick={overlayAdClick}>
                         <img src={`${appUrl}/golden/images/close-btn.svg`} alt="xx" width={10} height={10} />
                     </div>
-                    <div id="news_pc_index_top">
-                        <a href='#'>
-                            <img src={`${appUrl}/golden/images/360x540.jpg`} alt="ad" width={970} height={250} />
-                        </a> 
+                    <div id="news_m_index_popup">
+                        <img src={`${appUrl}/golden/images/360x540.jpg`} alt="ad" width={970} height={250} />
                     </div>
                 </div>
             </div>
