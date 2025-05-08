@@ -47,7 +47,7 @@ const GoldenPage = (props) => {
       <h1 className="display_none" >{meta.title}</h1>
 
       <Header menu={menu} pageName={pageName} />
-      {/* <OverlayAd adUnit= "news_m_index_popup"  projectName= {projectName}/> */}
+      <OverlayAd adUnit= "news_m_index_popup"  projectName= {projectName}/>
       <FixedBottomAd />
       <main className={cx("homePage")}>        
 

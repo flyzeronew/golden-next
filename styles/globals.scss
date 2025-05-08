@@ -299,15 +299,13 @@ article section{
   display: none;
 }
 @media (max-width: 1023px) {
-  #overlayAd {
-    display: block;
-  }
+  // #overlayAd {
+  //   display: block;
+  // }
 }
-
 #overlayAd.hide{
   display: none;
 }
-
 #overlayAd.old {
   background-color: rgba(0, 0, 0, 0.9);
   height: calc(100%);
