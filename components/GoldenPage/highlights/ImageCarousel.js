@@ -1,4 +1,3 @@
-import React, { Component } from "react"
 import styles from './ImageCarousel.module.scss';
 import classnames from "classnames/bind";
 import Slider from "react-slick"

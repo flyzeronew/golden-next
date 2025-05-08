@@ -2,6 +2,7 @@ import { usePathname } from 'next/navigation'
 import LazyLoad from 'react-lazyload'
 import CustomHead from '../../components/CustomHead'
 import ImageCarousel from '../../components/GoldenPage/highlights/ImageCarousel'
+import FixedBottomAd from '../../components/FixedBottomAd'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import styles from './highlights.module.scss'
@@ -35,7 +36,7 @@ const  Highlights = (props) => {
       <h1 className="display_none" >{meta.title}</h1>
 
       <Header menu={menu} pageName={pageName} />
-      
+      <FixedBottomAd />
       <main className={cx("highlightsPage")}>
         <article>
           <div className="adBox ad-pc height-250 pd-t48" >
@@ -224,7 +225,7 @@ const  Highlights = (props) => {
           </section>
 
           <div className="adBox ad-pc height-90 pd-t48 ">
-            <div id="news_pc_index_d1">
+            <div id="news_pc_read_d1">
               <a href='#'>
                 <img src={`${appUrl}/golden/images/ad728x90.jpg`} alt="ad" width={728} height={90} />
               </a>

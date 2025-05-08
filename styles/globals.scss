@@ -146,10 +146,10 @@ article section{
   justify-content: center;
   align-items: center;
 }
-.adBox.ad-pc{
+.ad-pc{
   display: block;
 }
-.adBox.ad-mo{
+.ad-mo{
   display:none;
 }
 .height-90{
@@ -173,10 +173,10 @@ article section{
 }
 
 @media (max-width:1023px) {
-  .adBox.ad-pc{
+  .ad-pc{
     display:none;
   }
-  .adBox.ad-mo{
+  .ad-mo{
     display: block;
   }
 }
@@ -197,6 +197,35 @@ article section{
 {
   width:max-content;
   margin: 0 auto;
+}
+
+.fixedBottomAd{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+}
+.fixedBottomAd.show{
+  display: block;
+}
+.fixedBottomAd.hide{
+  display: none;
+}
+.fixedBottomAd .box{
+  position: relative;
+  width: 320px;
+  min-height: 100px;
+  line-height: 0;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.fixedBottomAd .box .xx{
+  width: 20px;
+  position:absolute;
+  top:0;
+  right: 0;
+  aspect-ratio: 1/1;
 }
 
 /* underlay */
@@ -227,20 +256,4 @@ article section{
   }
 }
 /* underlay end */
-@media (max-width:1023px) {
-  .fifa_ad .ad970{display:none;}
-  .fifa_ad .ad300,.fifa_ad .ad320,.fifa_ad .ad320_fly{display:block;}
-}
-@media (max-width:767px) {
-  .lightbox_ad{display: block;}
-  .flexd_bottom_ad {
-      position: fixed;
-      bottom: 0;
-      display: block;
-  }
-}
-
-@media (max-width:359px) {
-  .fifa_ad .ad300,.fifa_ad .ad320_fly,.fly_ad .img{width:100%;}
-}
 // 廣告欄位 ed

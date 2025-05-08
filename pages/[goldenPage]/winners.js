@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import LazyLoad from 'react-lazyload'
 import ImageCarousel from '../../components/GoldenPage/winners/ImageCarousel'
+import FixedBottomAd from '../../components/FixedBottomAd'
 import CustomHead from '../../components/CustomHead'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
@@ -45,13 +46,13 @@ const  Winners = (props) => {
       <h1 className="display_none" >{meta.title}</h1>
 
       <Header menu={menu} pageName={pageName} />
-      
+      <FixedBottomAd />
       <main className={cx("winnersPage")}>
         <article>
 
           <div className="adBox ad-pc height-250 pd-t48" >
             <div id="news_pc_read_top">
-            <a href='#'>
+              <a href='#'>
                 <img src={`${appUrl}/golden/images/ad970x250.jpg`} alt="ad" width={970} height={250} />
               </a> 
             </div>

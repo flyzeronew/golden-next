@@ -4,6 +4,7 @@ import CustomHead from '../components/CustomHead'
 import ImageCarousel from '../components/GoldenPage/home/ImageCarousel'
 import ImageCarousel2 from '../components/GoldenPage/home/ImageCarousel2'
 import ImageCarousel3 from '../components/GoldenPage/home/ImageCarousel3'
+import FixedBottomAd from '../components/FixedBottomAd'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Sponsor from '../components/GoldenPage/Sponsor'
@@ -38,7 +39,9 @@ const GoldenPage = (props) => {
       <h1 className="display_none" >{meta.title}</h1>
 
       <Header menu={menu} pageName={pageName} />
-      <main className={cx("homePage")}>
+      <FixedBottomAd />
+      <main className={cx("homePage")}>       
+        
         <div className={cx("kvBox")}>
           <div className={cx("frameBox")}>
             <div className={cx("head")}></div>
@@ -58,7 +61,7 @@ const GoldenPage = (props) => {
 
           <div className="adBox ad-pc height-250 pd-t48" >
             <div id="news_pc_index_top">
-            <a href='#'>
+              <a href='#'>
                 <img src={`${appUrl}/golden/images/ad970x250.jpg`} alt="ad" width={970} height={250} />
               </a> 
             </div>
