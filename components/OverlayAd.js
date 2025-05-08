@@ -52,8 +52,6 @@ function OverlayAd(props) {
                             }
                         });
                         
-                    } else {
-                        console.error("Failed to define the ad slot.");
                     }
                 });
             } else {
