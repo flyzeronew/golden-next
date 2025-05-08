@@ -23,14 +23,6 @@ export default function Document() {
         <Script
           async
           src = {`https://power.adhacker.online/tvbs/news/${adEnv}/news.js`}
-          type="text/javascript"
-          strategy ="afterInteractive"          
-        />
-        <Script
-          async
-          src = 'https://securepubads.g.doubleclick.net/tag/js/gpt.js'
-          type = "text/javascript"
-          strategy = "afterInteractive"          
         />
       </Head>
       <body>

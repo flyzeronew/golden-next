@@ -26,11 +26,11 @@ const  Winners = (props) => {
 
   function menuShowClick() {
     setMenuShow(true);    
-    document.documentElement.style.overflowY = 'hidden';
+    //document.documentElement.style.overflowY = 'hidden';
   }
   function menuHideClick() {
     setMenuShow(false);
-    document.documentElement.style.overflowY = 'auto';
+    //document.documentElement.style.overflowY = 'auto';
   }
 
   return (

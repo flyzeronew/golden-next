@@ -1,9 +1,11 @@
 import { usePathname } from 'next/navigation'
+import React, { useRef, useState, useEffect } from 'react'
 import LazyLoad from 'react-lazyload'
 import CustomHead from '../components/CustomHead'
 import ImageCarousel from '../components/GoldenPage/home/ImageCarousel'
 import ImageCarousel2 from '../components/GoldenPage/home/ImageCarousel2'
 import ImageCarousel3 from '../components/GoldenPage/home/ImageCarousel3'
+import OverlayAd from '../components/OverlayAd'
 import FixedBottomAd from '../components/FixedBottomAd'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -26,8 +28,26 @@ const GoldenPage = (props) => {
   const metaData = props.meta;
   const meta = metaData.find(item => item.name === projectName).home;
 
+  useEffect(() => {
+  
+          if (typeof window !== 'undefined') {
+              window.googletag = window.googletag || { cmd: [] }            
+          }
+          window.googletag = window.googletag || {cmd: []};
+          console.log(window.googletag);
+          googletag.cmd.push(() => {    
+              // googletag.defineSlot(`/31610311/news_m_index_popup`, [[336, 280],[360, 540],[300, 250],[320, 480],[1, 1],] , 'news_m_index_popup' ).addService(googletag.pubads());
+              // googletag.pubads().setTargeting('news_channel', `events/goldenmusic2025`);
+              // window.googletag.pubads().collapseEmptyDivs();
+              // googletag.enableServices();
+              // googletag.display('news_m_index_popup');
+          });
+  
+  }, []);
+
   return (
     <div className="container" >
+      <div className='news_m_index_popup'></div>
       <CustomHead 
         title={meta.title}
         description={meta.description}
@@ -39,9 +59,10 @@ const GoldenPage = (props) => {
       <h1 className="display_none" >{meta.title}</h1>
 
       <Header menu={menu} pageName={pageName} />
+      {/* <OverlayAd adUnit= "news_m_index_popup"  projectName= {projectName}/> */}
       <FixedBottomAd />
-      <main className={cx("homePage")}>       
-        
+      <main className={cx("homePage")}>        
+
         <div className={cx("kvBox")}>
           <div className={cx("frameBox")}>
             <div className={cx("head")}></div>
