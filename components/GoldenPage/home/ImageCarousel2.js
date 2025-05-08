@@ -18,9 +18,11 @@ function ImageCarousel2(props) {
 
     function lightBoxShowClick() {
         setLightBoxShow(true);
+        document.documentElement.style.overflowY = 'hidden';
     }    
     function lightBoxHideClick() {
         setLightBoxShow(false);
+        document.documentElement.style.overflowY = 'auto';
     }
     function handleOpenLightbox() {
         lightboxSliderRef.current?.slickGoTo(0); 
