@@ -26,11 +26,11 @@ const  Winners = (props) => {
 
   function menuShowClick() {
     setMenuShow(true);    
-    //document.documentElement.style.overflowY = 'hidden';
+    document.documentElement.style.overflowY = 'hidden';
   }
   function menuHideClick() {
     setMenuShow(false);
-    //document.documentElement.style.overflowY = 'auto';
+    document.documentElement.style.overflowY = 'auto';
   }
 
   return (
@@ -82,15 +82,13 @@ const  Winners = (props) => {
                     </div>
 
                     <div className={cx("menuLigthBox" ,true === menuShow ? 'show' : '')}>
-                      <div className={cx("fixed")}>
-
+                        <div className={cx("fixedBox")}>
                           <div className={cx("xxBox")} onClick={menuHideClick}>
                             <div className={cx("xx")}>
                               <img src={`${appUrl}/golden/images/close-btn-black.svg`} alt="arraw" width={24} height={24} />
                             </div>
-                          </div>
-                          
-                          <div className={cx("scrollBox")}>
+                          </div>                          
+                          <div className={cx("scrollBox",true === menuShow ? 'show' : '')}>
                             <div className={cx("menu")}>
 
                               <div className={cx("box")}>
@@ -202,17 +200,10 @@ const  Winners = (props) => {
                                   </ul>
                                 </div>
                               </div>
-
                             </div>
                           </div>
-
+                        </div>
                       </div>
-                    </div>
-                    
-                    <div 
-                      className={cx("menuMask" ,true === menuShow ? 'show' : '')}
-                      onClick={menuHideClick}
-                    ></div>
                   </div>
 
                   <ImageCarousel />

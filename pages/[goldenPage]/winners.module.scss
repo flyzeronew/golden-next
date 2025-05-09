@@ -71,20 +71,21 @@
 
 // 得獎彈出名單
 .awardsBox .menuLigthBox{
-    position: absolute;
-    top:50px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0px;
     left:0;    
     width: 100%;
     display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+    z-index: 11;
 }
+
 .awardsBox .menuLigthBox.show{
-    display: block;
-}
-.awardsBox .menuLigthBox .fixed{
-    position: absolute;
-    left:0;    
-    width: 100%;
-    z-index: 12;
+    display: flex;
 }
 .awardsBox .menuLigthBox .xxBox{
     max-width: 900px;
@@ -111,14 +112,14 @@
     position: relative;
     background-color: #fff;
 }
-.awardsBox .menuLigthBox .fixed .xxBox{
+.awardsBox .menuLigthBox .xxBox{
     position: relative;
 }
-.awardsBox .menuLigthBox .fixed .scrollBox::-webkit-scrollbar {
+.awardsBox .menuLigthBox .scrollBox::-webkit-scrollbar {
     width: 2px;
     background: #ffedd9;
 }
-.awardsBox .menuLigthBox .fixed .scrollBox::-webkit-scrollbar-thumb {
+.awardsBox .menuLigthBox .scrollBox::-webkit-scrollbar-thumb {
     background: #98836B;
 }
 .awardsBox .menuLigthBox .box{
@@ -168,15 +169,19 @@
 }
 @media (max-width:1023px) {
     .awardsBox .menuLigthBox{
+        align-items: flex-end;
+    }
+    .awardsBox .menuLigthBox .fixedBox{
+        width: 100%;
+    }
+    .awardsBox .menuLigthBox{
         top:0;
     }
-    .awardsBox .menuLigthBox .fixed{
-        height: 85vh;
-        background-color: #fff;
-    }
-    .awardsBox .menuLigthBox .fixed .scrollBox{
-        max-height: 63vh;
+    .awardsBox .menuLigthBox .scrollBox{
         padding:4px 24px;
+    }
+    .awardsBox .menuLigthBox .scrollBox.show{
+        max-height: 75vh;
     }
     .awardsBox .menuLigthBox .box .list ul{
         display: block;
